@@ -101,8 +101,8 @@ class ClientFedMD(Client):
             X = X.to(self.device)
             y = y
             _,Z = self.model(X) 
-            Q = soft_predict(Z,temp).to(self.device).detach().cpu()
-            soft_predictions.append(Q)
+            Q = soft_predict(Z,temp).to(self.device).detach().cpu() # the dimension of Q is [batch_size, num_classes]
+            soft_predictions.append(Q) # the dimension of soft_predictions is [batch_num, batch_size, num_classes]
             del X
             del y
             del Z

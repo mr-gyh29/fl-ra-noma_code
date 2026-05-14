@@ -1,5 +1,7 @@
 import torch
 import copy
+
+# 计算准确率
 def Accuracy(y,y_predict):
     leng = len(y)
     miss = 0

@@ -1,0 +1,570 @@
+nohup: 忽略输入
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+/home/gyh/anaconda3/envs/pt_38py_env_FLRA/lib/python3.8/site-packages/torchvision/datasets/mnist.py:498: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:180.)
+  return torch.from_numpy(parsed.astype(m[2], copy=False)).view(*s)
+1.9.0+cu111
+cuda
+<class 'argparse.Namespace'>
+per-client train sizes: [200, 200, 200, 200, 200, 200, 200, 200, 200, 200] ...
+min/mean/max: 200 200.0 200
+total train used: 2000 (should be 2000)
+Client 0 data distribution:
+[133, 1, 0, 0, 0, 0, 8, 50, 0, 0]
+Client 1 data distribution:
+[1, 61, 130, 0, 0, 0, 0, 0, 0, 0]
+Client 2 data distribution:
+[1, 14, 0, 125, 0, 2, 50, 0, 0, 0]
+Client 3 data distribution:
+[2, 125, 0, 65, 0, 0, 0, 0, 0, 0]
+Client 4 data distribution:
+[5, 28, 21, 0, 2, 0, 6, 130, 0, 0]
+Client 5 data distribution:
+[41, 1, 14, 0, 127, 1, 0, 3, 2, 3]
+Client 6 data distribution:
+[0, 0, 0, 61, 0, 0, 131, 0, 0, 0]
+Client 7 data distribution:
+[3, 44, 0, 2, 0, 130, 0, 5, 0, 8]
+Client 8 data distribution:
+[3, 2, 49, 1, 1, 0, 0, 0, 9, 127]
+Client 9 data distribution:
+[1, 28, 6, 0, 5, 15, 0, 1, 136, 0]
+Checkpoint dir: ./checkpoint/FMNIST/
+CNN
+# model parameters: 15722
+---------------------------------------------------------------Training---------------------------------------------------------------
+------------------ Experiment 1 ------------------
+Namespace(CPUcycles_per_sample=80, NOMA_method='NOMA', PS_method='maximum_PS', RO_method='proposed_RO', alg='FedAvg', bandwidth=10000000.0, batch_size=64, beta=0.1, client_computation_capacity=array([1.e+09, 1.e+09, 1.e+09, 1.e+09, 1.e+09, 1.e+09, 1.e+09, 1.e+09,
+       1.e+09, 1.e+09]), clip_grad=None, code_len=32, dataset='FMNIST', dataspilt='fixed_m_iid', eval_only=False, gamma=0.05, lam=0.04, latency_threshold=0.1, local_ep=5, log_frq=5, lr=0.001, lr_sh_rate=10, m=200, mi=4, model='CNN', num_classes=10, num_clients=10, num_epochs=150, num_scatterers=5, op_method='proposed_with_h_order', part=1, phi_max=1.5707963267948966, random_not='random', sampling_rate=1, save_model=True, seed=0, std=2, temp=0.5, transmit_power_max=1000000.0, upload_model=True, use_lrschd=False, wavelength=0.1, zipf=0)
+  0%|          | 0/150 [00:00<?, ?it/s]3D positions plotted.
+优化后的角度: 45.804697155832436
+优化后的角度: 53.27703198050871
+优化后的角度: 49.68240217230027
+优化后的角度: 44.64297552772911
+优化后的角度: 45.72359017811631
+优化后的角度: 88.76623803473205
+优化后的角度: 53.297622894335674
+优化后的角度: 46.57524059625767
+优化后的角度: 45.480626230275504
+优化后的角度: 52.967888021488086
+h参数 [2.17921437e-07 1.64080134e-07 1.92209350e-07 2.31100433e-07
+ 2.17539307e-07 2.39206250e-07 1.62092797e-07 2.17423367e-07
+ 2.26438383e-07 1.55970035e-07]
+RA orientations optimized.
+用户 9 的最小需求功率 p_req: 0.004020241130632068
+用户 6 的最小需求功率 p_req: 603351.9578168227
+用户 1 的最小需求功率 p_req: 1214870.8921769757
+用户 2 的最小需求功率 p_req: 1037604.1085902593
+用户 7 的最小需求功率 p_req: 916811.2043029409
+用户 4 的最小需求功率 p_req: 1541926.9293251748
+用户 0 的最小需求功率 p_req: 1537665.9300280719
+用户 8 的最小需求功率 p_req: 1482079.3117826218
+用户 3 的最小需求功率 p_req: 1452916.9659358296
+用户 5 的最小需求功率 p_req: 1400842.8641593577
+优化完成
+Selected clients in round 0: [6 7 9]
+
+ | Global Training Round : 0 |
+
+| Global Round : 0 | Client: 6 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.435115
+| Global Round : 0 | Client: 6 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.347811
+| Global Round : 0 | Client: 6 | Local Epoch : 2 | [0/200 (0%)]	Loss: 2.196942
+| Global Round : 0 | Client: 6 | Local Epoch : 3 | [0/200 (0%)]	Loss: 2.023045
+| Global Round : 0 | Client: 6 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.725656
+| Global Round : 0 | Client: 7 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.457821
+| Global Round : 0 | Client: 7 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.278540
+| Global Round : 0 | Client: 7 | Local Epoch : 2 | [0/200 (0%)]	Loss: 2.003552
+| Global Round : 0 | Client: 7 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.406807
+| Global Round : 0 | Client: 7 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.011771
+| Global Round : 0 | Client: 9 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.229797
+| Global Round : 0 | Client: 9 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.992801
+| Global Round : 0 | Client: 9 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.548028
+| Global Round : 0 | Client: 9 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.168041
+| Global Round : 0 | Client: 9 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.344278
+/home/gyh/anaconda3/envs/pt_38py_env_FLRA/lib/python3.8/site-packages/cvxpy/reductions/solvers/solving_chain.py:356: FutureWarning: 
+    You specified your problem should be solved by ECOS. Starting in
+    CXVPY 1.6.0, ECOS will no longer be installed by default with CVXPY.
+    Please either add ECOS as an explicit install dependency to your project
+    or switch to our new default solver, Clarabel, by either not specifying a
+    solver argument or specifying ``solver=cp.CLARABEL``. To suppress this
+    warning while continuing to use ECOS, you can filter this warning using
+    Python's ``warnings`` module until you are using 1.6.0.
+    
+  warnings.warn(ECOS_DEP_DEPRECATION_MSG, FutureWarning)
+/home/gyh/anaconda3/envs/pt_38py_env_FLRA/lib/python3.8/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+  1%|          | 1/150 [00:04<11:12,  4.51s/it]average loss:   1.7930334117677476
+average local test accuracy: 0.1
+global test accuracy:  0.1005859375
+3D positions plotted.
+优化后的角度: 52.07319340143364
+优化后的角度: 45.2912554807391
+优化后的角度: 44.77278389493007
+优化后的角度: 44.86887932821043
+优化后的角度: 46.35555078768425
+优化后的角度: 88.76623803473205
+优化后的角度: 44.03248254130122
+优化后的角度: 49.89850421226525
+优化后的角度: 47.67395892759307
+优化后的角度: 51.529173521557034
+h参数 [1.71425761e-07 2.29022738e-07 2.24948971e-07 2.29013028e-07
+ 2.16227237e-07 2.39206250e-07 2.32743952e-07 1.84605780e-07
+ 2.11573078e-07 1.84088741e-07]
+RA orientations optimized.
+用户 0 的最小需求功率 p_req: 0.003650375798527484
+用户 9 的最小需求功率 p_req: 583904.9173041545
+用户 7 的最小需求功率 p_req: 1207550.4887615277
+用户 8 的最小需求功率 p_req: 1052568.0149454472
+用户 4 的最小需求功率 p_req: 1029390.9018920449
+用户 2 的最小需求功率 p_req: 988978.779207492
+用户 3 的最小需求功率 p_req: 1588502.539051428
+用户 1 的最小需求功率 p_req: 1588435.191657512
+用户 6 的最小需求功率 p_req: 1563830.798527448
+用户 5 的最小需求功率 p_req: 1520042.1262305253
+优化完成
+Selected clients in round 1: [0 2 9]
+
+ | Global Training Round : 1 |
+
+| Global Round : 1 | Client: 0 | Local Epoch : 0 | [0/200 (0%)]	Loss: 3.479447
+| Global Round : 1 | Client: 0 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.486360
+| Global Round : 1 | Client: 0 | Local Epoch : 2 | [0/200 (0%)]	Loss: 2.112438
+| Global Round : 1 | Client: 0 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.935468
+| Global Round : 1 | Client: 0 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.773946
+| Global Round : 1 | Client: 2 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.442192
+| Global Round : 1 | Client: 2 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.859178
+| Global Round : 1 | Client: 2 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.555328
+| Global Round : 1 | Client: 2 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.456633
+| Global Round : 1 | Client: 2 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.128934
+| Global Round : 1 | Client: 9 | Local Epoch : 0 | [0/200 (0%)]	Loss: 1.709909
+| Global Round : 1 | Client: 9 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.382471
+| Global Round : 1 | Client: 9 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.079484
+| Global Round : 1 | Client: 9 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.309796
+| Global Round : 1 | Client: 9 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.951737
+  1%|▏         | 2/150 [00:08<10:58,  4.45s/it]average loss:   1.6684288673930698
+average local test accuracy: 0.1
+global test accuracy:  0.1005859375
+3D positions plotted.
+优化后的角度: 48.89815098182552
+优化后的角度: 54.58208158262591
+优化后的角度: 49.37810508582708
+优化后的角度: 47.340376333394225
+优化后的角度: 48.026460589283516
+优化后的角度: 88.76623803473205
+优化后的角度: 47.023073356943776
+优化后的角度: 49.998791976497
+优化后的角度: 44.768359912118726
+优化后的角度: 48.200306447052164
+h参数 [2.03948887e-07 1.49622137e-07 1.84392907e-07 2.06860385e-07
+ 1.96027206e-07 2.39206250e-07 2.13213456e-07 1.84148820e-07
+ 2.25085142e-07 2.02594646e-07]
+RA orientations optimized.
+用户 1 的最小需求功率 p_req: 0.004182325302819889
+用户 7 的最小需求功率 p_req: 508955.9157004384
+用户 2 的最小需求功率 p_req: 1134429.574788533
+用户 4 的最小需求功率 p_req: 1066020.6021107715
+用户 9 的最小需求功率 p_req: 1030942.0254047709
+用户 0 的最小需求功率 p_req: 1024614.7612613861
+用户 3 的最小需求功率 p_req: 1011729.6738700008
+用户 6 的最小需求功率 p_req: 981086.1450433963
+用户 8 的最小需求功率 p_req: 1523005.0017781868
+用户 5 的最小需求功率 p_req: 1433823.5168462803
+优化完成
+Selected clients in round 2: [1 6 7]
+
+ | Global Training Round : 2 |
+
+| Global Round : 2 | Client: 1 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.611621
+| Global Round : 2 | Client: 1 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.985943
+| Global Round : 2 | Client: 1 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.471820
+| Global Round : 2 | Client: 1 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.160843
+| Global Round : 2 | Client: 1 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.712387
+| Global Round : 2 | Client: 6 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.372873
+| Global Round : 2 | Client: 6 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.837562
+| Global Round : 2 | Client: 6 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.331579
+| Global Round : 2 | Client: 6 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.970757
+| Global Round : 2 | Client: 6 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.846492
+| Global Round : 2 | Client: 7 | Local Epoch : 0 | [0/200 (0%)]	Loss: 1.900230
+| Global Round : 2 | Client: 7 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.155864
+| Global Round : 2 | Client: 7 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.184474
+| Global Round : 2 | Client: 7 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.970007
+| Global Round : 2 | Client: 7 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.947707
+  2%|▏         | 3/150 [00:13<10:51,  4.43s/it]average loss:   1.3167807896931965
+average local test accuracy: 0.16171875
+global test accuracy:  0.1005859375
+3D positions plotted.
+优化后的角度: 45.106439090911834
+优化后的角度: 42.94137568370681
+优化后的角度: 42.74933994554537
+优化后的角度: 44.85663971086896
+优化后的角度: 44.32931273613396
+优化后的角度: 88.76623803473205
+优化后的角度: 44.899520025743676
+优化后的角度: 46.874610932010796
+优化后的角度: 48.46856451935728
+优化后的角度: 44.60193469661768
+h参数 [2.27821720e-07 2.48276544e-07 2.48935159e-07 2.26253225e-07
+ 2.36573708e-07 2.39206250e-07 2.24705727e-07 2.08473964e-07
+ 1.96836929e-07 2.27014029e-07]
+RA orientations optimized.
+用户 8 的最小需求功率 p_req: 0.003182340682983089
+用户 7 的最小需求功率 p_req: 591735.9628633512
+用户 6 的最小需求功率 p_req: 1128724.096567299
+用户 3 的最小需求功率 p_req: 1123276.7490349796
+用户 9 的最小需求功率 p_req: 1118945.122865993
+用户 0 的最小需求功率 p_req: 1113849.6007015517
+用户 4 的最小需求功率 p_req: 1072100.409662736
+用户 5 的最小需求功率 p_req: 1061375.3687913201
+用户 1 的最小需求功率 p_req: 1021565.5701310983
+用户 2 的最小需求功率 p_req: 1018862.7837389552
+优化完成
+Selected clients in round 3: [7 8]
+
+ | Global Training Round : 3 |
+
+| Global Round : 3 | Client: 7 | Local Epoch : 0 | [0/200 (0%)]	Loss: 1.606527
+| Global Round : 3 | Client: 7 | Local Epoch : 1 | [0/200 (0%)]	Loss: 0.848653
+| Global Round : 3 | Client: 7 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.068809
+| Global Round : 3 | Client: 7 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.020908
+| Global Round : 3 | Client: 7 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.912763
+| Global Round : 3 | Client: 8 | Local Epoch : 0 | [0/200 (0%)]	Loss: 3.986141
+| Global Round : 3 | Client: 8 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.456275
+| Global Round : 3 | Client: 8 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.884903
+| Global Round : 3 | Client: 8 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.681504
+| Global Round : 3 | Client: 8 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.481778
+  3%|▎         | 4/150 [00:17<10:39,  4.38s/it]average loss:   1.5121848742167154
+average local test accuracy: 0.0
+global test accuracy:  0.23291015625
+3D positions plotted.
+优化后的角度: 49.46438246719942
+优化后的角度: 50.96354894174355
+优化后的角度: 46.34278307508375
+优化后的角度: 46.93514445737009
+优化后的角度: 46.045624696915866
+优化后的角度: 88.76623803473205
+优化后的角度: 45.355470225685046
+优化后的角度: 52.845372971966896
+优化后的角度: 54.270406690757284
+优化后的角度: 44.94131433859294
+h参数 [1.91507540e-07 1.74639908e-07 2.21817356e-07 2.14752279e-07
+ 2.17158166e-07 2.39206250e-07 2.25371630e-07 1.75680074e-07
+ 1.51985388e-07 2.23560094e-07]
+RA orientations optimized.
+用户 8 的最小需求功率 p_req: 0.004119377254112501
+用户 1 的最小需求功率 p_req: 544592.940972341
+用户 7 的最小需求功率 p_req: 1165790.6909189003
+用户 0 的最小需求功率 p_req: 1068358.9428674702
+用户 3 的最小需求功率 p_req: 952237.8443771463
+用户 4 的最小需求功率 p_req: 1560836.8181764456
+用户 2 的最小需求功率 p_req: 1528052.024163404
+用户 9 的最小需求功率 p_req: 1516140.2674158912
+用户 6 的最小需求功率 p_req: 1503192.774774935
+用户 5 的最小需求功率 p_req: 1417689.0696403086
+优化完成
+Selected clients in round 4: [1 3 8]
+
+ | Global Training Round : 4 |
+
+| Global Round : 4 | Client: 1 | Local Epoch : 0 | [0/200 (0%)]	Loss: 1.946215
+| Global Round : 4 | Client: 1 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.215464
+| Global Round : 4 | Client: 1 | Local Epoch : 2 | [0/200 (0%)]	Loss: 0.684676
+| Global Round : 4 | Client: 1 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.484386
+| Global Round : 4 | Client: 1 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.327743
+| Global Round : 4 | Client: 3 | Local Epoch : 0 | [0/200 (0%)]	Loss: 1.791357
+| Global Round : 4 | Client: 3 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.435975
+| Global Round : 4 | Client: 3 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.117785
+| Global Round : 4 | Client: 3 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.809573
+| Global Round : 4 | Client: 3 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.757828
+| Global Round : 4 | Client: 8 | Local Epoch : 0 | [0/200 (0%)]	Loss: 1.619937
+| Global Round : 4 | Client: 8 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.225169
+| Global Round : 4 | Client: 8 | Local Epoch : 2 | [0/200 (0%)]	Loss: 0.978540
+| Global Round : 4 | Client: 8 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.758190
+| Global Round : 4 | Client: 8 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.711924
+  3%|▎         | 5/150 [00:22<10:37,  4.40s/it]average loss:   0.979386528995302
+average local test accuracy: 0.09765625
+global test accuracy:  0.1845703125
+3D positions plotted.
+优化后的角度: 43.54645493563166
+优化后的角度: 47.451341710017196
+优化后的角度: 45.01269431916508
+优化后的角度: 50.79035444535177
+优化后的角度: 52.143424347679165
+优化后的角度: 88.76623803473205
+优化后的角度: 43.44999831771233
+优化后的角度: 48.31830655816106
+优化后的角度: 47.56682523696561
+优化后的角度: 47.53612086245968
+h参数 [2.43734631e-07 2.08210729e-07 2.22507571e-07 1.82277997e-07
+ 1.60294202e-07 2.39206250e-07 2.43445182e-07 1.94906080e-07
+ 2.11842167e-07 2.03512100e-07]
+RA orientations optimized.
+用户 4 的最小需求功率 p_req: 0.0039078279616404435
+用户 3 的最小需求功率 p_req: 550297.1085206646
+用户 7 的最小需求功率 p_req: 1102097.462682386
+用户 9 的最小需求功率 p_req: 1053356.8990883136
+用户 1 的最小需求功率 p_req: 1030628.7763857918
+用户 8 的最小需求功率 p_req: 1011936.7509804439
+用户 2 的最小需求功率 p_req: 964407.4935909174
+用户 5 的最小需求功率 p_req: 1479008.3999855474
+用户 6 的最小需求功率 p_req: 1455465.2732939343
+用户 0 的最小需求功率 p_req: 1453736.8279234509
+优化完成
+Selected clients in round 5: [2 3 4]
+
+ | Global Training Round : 5 |
+
+| Global Round : 5 | Client: 2 | Local Epoch : 0 | [0/200 (0%)]	Loss: 4.380333
+| Global Round : 5 | Client: 2 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.521509
+| Global Round : 5 | Client: 2 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.767846
+| Global Round : 5 | Client: 2 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.238805
+| Global Round : 5 | Client: 2 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.190028
+| Global Round : 5 | Client: 3 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.058251
+| Global Round : 5 | Client: 3 | Local Epoch : 1 | [0/200 (0%)]	Loss: 0.871176
+| Global Round : 5 | Client: 3 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.023724
+| Global Round : 5 | Client: 3 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.989155
+| Global Round : 5 | Client: 3 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.630954
+| Global Round : 5 | Client: 4 | Local Epoch : 0 | [0/200 (0%)]	Loss: 4.073982
+| Global Round : 5 | Client: 4 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.385975
+| Global Round : 5 | Client: 4 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.393695
+| Global Round : 5 | Client: 4 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.282373
+| Global Round : 5 | Client: 4 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.229073
+  4%|▍         | 6/150 [00:26<10:32,  4.39s/it]average loss:   1.5687203248341879
+average local test accuracy: 0.0
+global test accuracy:  0.10302734375
+3D positions plotted.
+优化后的角度: 53.68929090298383
+优化后的角度: 46.233643040116014
+优化后的角度: 47.08073713713594
+优化后的角度: 43.352326670507765
+优化后的角度: 45.584035143027016
+优化后的角度: 88.76623803473205
+优化后的角度: 43.684183300364545
+优化后的角度: 43.878156722941085
+优化后的角度: 48.21078334639917
+优化后的角度: 43.25500738526602
+h参数 [1.66538606e-07 2.15291748e-07 2.13969313e-07 2.43287680e-07
+ 2.22662180e-07 2.39206250e-07 2.37523961e-07 2.42916853e-07
+ 1.95171904e-07 2.43044201e-07]
+RA orientations optimized.
+用户 0 的最小需求功率 p_req: 0.003761303054652275
+用户 8 的最小需求功率 p_req: 533963.1534976949
+用户 2 的最小需求功率 p_req: 1058383.4474044912
+用户 1 的最小需求功率 p_req: 1052948.0669459875
+用户 4 的最小需求功率 p_req: 1017578.5021706698
+用户 6 的最小需求功率 p_req: 954875.988676555
+用户 5 的最小需求功率 p_req: 1569197.1729174028
+用户 7 的最小需求功率 p_req: 1546793.7714552544
+用户 9 的最小需求功率 p_req: 1545200.1206774665
+用户 3 的最小需求功率 p_req: 1543653.7031256778
+优化完成
+Selected clients in round 6: [0 6 8]
+
+ | Global Training Round : 6 |
+
+| Global Round : 6 | Client: 0 | Local Epoch : 0 | [0/200 (0%)]	Loss: 3.611438
+| Global Round : 6 | Client: 0 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.589086
+| Global Round : 6 | Client: 0 | Local Epoch : 2 | [0/200 (0%)]	Loss: 2.021401
+| Global Round : 6 | Client: 0 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.740897
+| Global Round : 6 | Client: 0 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.489129
+| Global Round : 6 | Client: 6 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.513540
+| Global Round : 6 | Client: 6 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.663483
+| Global Round : 6 | Client: 6 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.232107
+| Global Round : 6 | Client: 6 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.872753
+| Global Round : 6 | Client: 6 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.916831
+| Global Round : 6 | Client: 8 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.285910
+| Global Round : 6 | Client: 8 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.441065
+| Global Round : 6 | Client: 8 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.032050
+| Global Round : 6 | Client: 8 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.810718
+| Global Round : 6 | Client: 8 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.592644
+  5%|▍         | 7/150 [00:30<10:29,  4.40s/it]average loss:   1.5124161110983956
+average local test accuracy: 0.2
+global test accuracy:  0.23193359375
+3D positions plotted.
+优化后的角度: 44.326781214580556
+优化后的角度: 48.25933072285618
+优化后的角度: 47.015721723351604
+优化后的角度: 46.216683393965496
+优化后的角度: 48.13932371831704
+优化后的角度: 88.76623803473205
+优化后的角度: 43.6932863836029
+优化后的角度: 52.92462334837921
+优化后的角度: 53.024022359831555
+优化后的角度: 54.048805077901115
+h参数 [2.30050917e-07 1.92907169e-07 2.14466499e-07 2.20482907e-07
+ 1.99273002e-07 2.39206250e-07 2.38957471e-07 1.58484585e-07
+ 1.71845821e-07 1.56924307e-07]
+RA orientations optimized.
+用户 9 的最小需求功率 p_req: 0.0039917472173179366
+用户 7 的最小需求功率 p_req: 619607.7720472594
+用户 8 的最小需求功率 p_req: 1149709.7404559657
+用户 1 的最小需求功率 p_req: 1024185.9604169126
+用户 4 的最小需求功率 p_req: 992473.0928312648
+用户 2 的最小需求功率 p_req: 1504778.9261480675
+用户 3 的最小需求功率 p_req: 1463717.4021143308
+用户 0 的最小需求功率 p_req: 1402129.510666363
+用户 6 的最小需求功率 p_req: 1350552.747464375
+用户 5 的最小需求功率 p_req: 1347099.8000651242
+优化完成
+Selected clients in round 7: [4 7 9]
+
+ | Global Training Round : 7 |
+
+| Global Round : 7 | Client: 4 | Local Epoch : 0 | [0/200 (0%)]	Loss: 3.185280
+| Global Round : 7 | Client: 4 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.946682
+| Global Round : 7 | Client: 4 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.462940
+| Global Round : 7 | Client: 4 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.098028
+| Global Round : 7 | Client: 4 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.984102
+| Global Round : 7 | Client: 7 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.608419
+| Global Round : 7 | Client: 7 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.455317
+| Global Round : 7 | Client: 7 | Local Epoch : 2 | [0/200 (0%)]	Loss: 0.834903
+| Global Round : 7 | Client: 7 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.805462
+| Global Round : 7 | Client: 7 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.894118
+| Global Round : 7 | Client: 9 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.462057
+| Global Round : 7 | Client: 9 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.876334
+| Global Round : 7 | Client: 9 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.432712
+| Global Round : 7 | Client: 9 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.020832
+| Global Round : 7 | Client: 9 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.872836
+  5%|▌         | 8/150 [00:35<10:43,  4.53s/it]average loss:   1.3509279516008164
+average local test accuracy: 0.0
+global test accuracy:  0.22314453125
+3D positions plotted.
+优化后的角度: 48.13556267364714
+优化后的角度: 46.64759405032567
+优化后的角度: 51.50943975340135
+优化后的角度: 44.85097182755541
+优化后的角度: 48.36386524567398
+优化后的角度: 88.76623803473205
+优化后的角度: 44.972773154221386
+优化后的角度: 45.04036432951799
+优化后的角度: 52.80194685042455
+优化后的角度: 53.877317363329055
+h参数 [1.95060526e-07 2.08584049e-07 1.82126732e-07 2.29739839e-07
+ 1.95881183e-07 2.39206250e-07 2.24567920e-07 2.23785804e-07
+ 1.74292281e-07 1.65906862e-07]
+RA orientations optimized.
+用户 9 的最小需求功率 p_req: 0.00377753813225625
+用户 8 的最小需求功率 p_req: 595661.9528543188
+用户 2 的最小需求功率 p_req: 1169480.3351074262
+用户 0 的最小需求功率 p_req: 1092489.0090085524
+用户 4 的最小需求功率 p_req: 1087361.3728563886
+用户 1 的最小需求功率 p_req: 1021657.6091672246
+用户 7 的最小需求功率 p_req: 951774.5470127866
+用户 6 的最小需求功率 p_req: 1571569.0196862493
+用户 3 的最小需求功率 p_req: 1536189.7487261698
+用户 5 的最小需求功率 p_req: 1475396.1734217051
+优化完成
+Selected clients in round 8: [7 8 9]
+
+ | Global Training Round : 8 |
+
+| Global Round : 8 | Client: 7 | Local Epoch : 0 | [0/200 (0%)]	Loss: 0.879745
+| Global Round : 8 | Client: 7 | Local Epoch : 1 | [0/200 (0%)]	Loss: 0.433989
+| Global Round : 8 | Client: 7 | Local Epoch : 2 | [0/200 (0%)]	Loss: 0.635578
+| Global Round : 8 | Client: 7 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.718602
+| Global Round : 8 | Client: 7 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.564878
+| Global Round : 8 | Client: 8 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.578519
+| Global Round : 8 | Client: 8 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.237360
+| Global Round : 8 | Client: 8 | Local Epoch : 2 | [0/200 (0%)]	Loss: 0.845399
+| Global Round : 8 | Client: 8 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.676436
+| Global Round : 8 | Client: 8 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.665206
+| Global Round : 8 | Client: 9 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.191289
+| Global Round : 8 | Client: 9 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.116413
+| Global Round : 8 | Client: 9 | Local Epoch : 2 | [0/200 (0%)]	Loss: 0.901488
+| Global Round : 8 | Client: 9 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.764117
+| Global Round : 8 | Client: 9 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.749354
+  6%|▌         | 9/150 [00:40<10:45,  4.58s/it]average loss:   0.9299656947453817
+average local test accuracy: 0.0
+global test accuracy:  0.40966796875
+3D positions plotted.
+优化后的角度: 46.21990541230314
+优化后的角度: 52.434658023306845
+优化后的角度: 53.43914533129768
+优化后的角度: 45.17002006964506
+优化后的角度: 42.89546068099005
+优化后的角度: 88.76623803473205
+优化后的角度: 46.22413702802065
+优化后的角度: 47.77665694509685
+优化后的角度: 44.34861233367213
+优化后的角度: 48.58993578871228
+h参数 [2.11529680e-07 1.70332516e-07 1.59535513e-07 2.25316676e-07
+ 2.47258027e-07 2.39206250e-07 2.19405018e-07 2.10017546e-07
+ 2.29256324e-07 1.98665389e-07]
+RA orientations optimized.
+用户 2 的最小需求功率 p_req: 0.003928401180404611
+用户 1 的最小需求功率 p_req: 586695.917841602
+用户 9 的最小需求功率 p_req: 1039038.5916354766
+用户 7 的最小需求功率 p_req: 982875.0487578429
+用户 0 的最小需求功率 p_req: 1598761.4350073638
+用户 6 的最小需求功率 p_req: 1539816.0063053565
+用户 3 的最小需求功率 p_req: 1500174.5452205553
+用户 8 的最小需求功率 p_req: 1475888.7004302323
+用户 5 的最小需求功率 p_req: 1414498.2314477484
+用户 4 的最小需求功率 p_req: 1367051.0319041156
+优化完成
+Selected clients in round 9: [1 2 7]
+
+ | Global Training Round : 9 |
+
+| Global Round : 9 | Client: 1 | Local Epoch : 0 | [0/200 (0%)]	Loss: 1.137138
+| Global Round : 9 | Client: 1 | Local Epoch : 1 | [0/200 (0%)]	Loss: 0.457777
+| Global Round : 9 | Client: 1 | Local Epoch : 2 | [0/200 (0%)]	Loss: 0.168353
+| Global Round : 9 | Client: 1 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.061899
+| Global Round : 9 | Client: 1 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.052798
+| Global Round : 9 | Client: 2 | Local Epoch : 0 | [0/200 (0%)]	Loss: 3.935075
+| Global Round : 9 | Client: 2 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.309809
+| Global Round : 9 | Client: 2 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.598902
+| Global Round : 9 | Client: 2 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.215502
+| Global Round : 9 | Client: 2 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.165270
+| Global Round : 9 | Client: 7 | Local Epoch : 0 | [0/200 (0%)]	Loss: 1.183284
+| Global Round : 9 | Client: 7 | Local Epoch : 1 | [0/200 (0%)]	Loss: 0.510925
+| Global Round : 9 | Client: 7 | Local Epoch : 2 | [0/200 (0%)]	Loss: 0.381328
+| Global Round : 9 | Client: 7 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.476880
+| Global Round : 9 | Client: 7 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.413107
+  7%|▋         | 10/150 [00:45<10:49,  4.64s/it]average loss:   0.9263998369375864
+average local test accuracy: 0.09765625
+global test accuracy:  0.3359375
+3D positions plotted.
+优化后的角度: 48.165895561996734
+优化后的角度: 52.4207656028468
+优化后的角度: 47.0941099964206
+优化后的角度: 45.67932219164326
+优化后的角度: 44.45797397799422
+优化后的角度: 88.76623803473205
+优化后的角度: 44.06255558940946
+优化后的角度: 43.45445695572452
+优化后的角度: 45.74799156904982
+优化后的角度: 43.104339029046976
+h参数 [1.99941076e-07 1.69007028e-07 2.04530831e-07 2.20083664e-07
+ 2.33235073e-07 2.39206250e-07 2.33382152e-07 2.42650492e-07
+ 2.17429055e-07 2.44601342e-07]
+RA orientations optimized.
+用户 1 的最小需求功率 p_req: 0.0037044917970117733
+用户 0 的最小需求功率 p_req: 528952.1706302571
+用户 2 的最小需求功率 p_req: 1130523.8004797455
+用户 8 的最小需求功率 p_req: 1063459.3961641619
+用户 3 的最小需求功率 p_req: 1050100.1689724643
+用户 4 的最小需求功率 p_req: 991892.7059656711
+用户 6 的最小需求功率 p_req: 1617089.985100517
+用户 5 的最小需求功率 p_req: 1578517.3814464298
+用户 7 的最小需求功率 p_req: 1553748.9418410999
+用户 9 的最小需求功率 p_req: 1541356.818730073
+优化完成
+Selected clients in round 10: [0 1 4]
+
+ | Global Training Round : 10 |
+
+| Global Round : 10 | Client: 0 | Local Epoch : 0 | [0/200 (0%)]	Loss: 4.245565
+| Global Round : 10 | Client: 0 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.489033
+| Global Round : 10 | Client: 0 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.929636
+| Global Round : 10 | Client: 0 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.482245
+| Global Round : 10 | Client: 0 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.172764
+| Global Round : 10 | Client: 1 | Local Epoch : 0 | [0/200 (0%)]	Loss: 0.810489
+| Global Round : 10 | Client: 1 | Local Epoch : 1 | [0/200 (0%)]	Loss: 0.304341
+| Global Round : 10 | Client: 1 | Local Epoch : 2 | [0/200 (0%)]	Loss: 0.261125
+| Global Round : 10 | Client: 1 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.143997
+| Global Round : 10 | Client: 1 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.092929
+| Global Round : 10 | Client: 4 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.646929
+| Global Round : 10 | Client: 4 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.633088
+| Global Round : 10 | Client: 4 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.135697
+| Global Round : 10 | Client: 4 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.946194
+| Global Round : 10 | Client: 4 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.792739
+  7%|▋         | 11/150 [00:49<10:50,  4.68s/it]

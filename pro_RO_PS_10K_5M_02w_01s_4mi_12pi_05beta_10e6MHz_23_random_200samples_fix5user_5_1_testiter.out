@@ -1,0 +1,281 @@
+nohup: 忽略输入
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+/home/gyh/anaconda3/envs/pt_38py_env_FLRA/lib/python3.8/site-packages/torchvision/datasets/mnist.py:498: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:180.)
+  return torch.from_numpy(parsed.astype(m[2], copy=False)).view(*s)
+1.9.0+cu111
+cuda
+<class 'argparse.Namespace'>
+per-client train sizes: [200, 200, 200, 200, 200, 200, 200, 200, 200, 200] ...
+min/mean/max: 200 200.0 200
+total train used: 2000 (should be 2000)
+Client 0 data distribution:
+[133, 1, 0, 0, 0, 0, 8, 50, 0, 0]
+Client 1 data distribution:
+[1, 61, 130, 0, 0, 0, 0, 0, 0, 0]
+Client 2 data distribution:
+[1, 15, 0, 124, 0, 2, 50, 0, 0, 0]
+Client 3 data distribution:
+[2, 126, 0, 64, 0, 0, 0, 0, 0, 0]
+Client 4 data distribution:
+[5, 25, 23, 0, 2, 0, 7, 130, 0, 0]
+Client 5 data distribution:
+[38, 1, 14, 0, 129, 2, 0, 3, 2, 3]
+Client 6 data distribution:
+[0, 0, 0, 63, 0, 0, 129, 0, 0, 0]
+Client 7 data distribution:
+[3, 42, 0, 2, 0, 131, 0, 6, 0, 8]
+Client 8 data distribution:
+[2, 2, 51, 1, 1, 0, 0, 0, 8, 127]
+Client 9 data distribution:
+[1, 29, 5, 0, 6, 15, 0, 1, 135, 0]
+Checkpoint dir: ./checkpoint/FMNIST/
+CNN
+# model parameters: 15722
+---------------------------------------------------------------Training---------------------------------------------------------------
+------------------ Experiment 1 ------------------
+Namespace(CPUcycles_per_sample=80, NOMA_method='NOMA', PS_method='proposed_PS', RO_method='proposed_RO', alg='FedAvg', bandwidth=10000000.0, batch_size=64, beta=0.1, client_computation_capacity=array([1.e+09, 1.e+09, 1.e+09, 1.e+09, 1.e+09, 1.e+09, 1.e+09, 1.e+09,
+       1.e+09, 1.e+09]), clip_grad=None, code_len=32, dataset='FMNIST', dataspilt='fixed_m_iid', eval_only=False, gamma=0.05, lam=0.04, latency_threshold=0.1, local_ep=5, log_frq=5, lr=0.001, lr_sh_rate=10, m=200, mi=4, model='CNN', num_classes=10, num_clients=10, num_epochs=150, num_scatterers=5, op_method='proposed_with_h_order', part=1, phi_max=1.5707963267948966, random_not='random', sampling_rate=1, save_model=True, seed=0, std=2, temp=0.5, transmit_power_max=0.2, upload_model=True, use_lrschd=False, wavelength=0.1, zipf=0)
+  0%|          | 0/150 [00:00<?, ?it/s]3D positions plotted.
+优化后的角度: 44.39256630930918
+优化后的角度: 43.476723407261794
+优化后的角度: 45.03707661185452
+优化后的角度: 47.8638995845435
+优化后的角度: 48.54904527150115
+优化后的角度: 88.76623803473205
+优化后的角度: 50.77615839070301
+优化后的角度: 43.5813228583578
+优化后的角度: 45.83714906289516
+优化后的角度: 52.9889800054964
+h参数 [2.32405943e-07 2.39364263e-07 2.23214183e-07 1.98456629e-07
+ 1.97245984e-07 2.39206250e-07 1.83133737e-07 2.38565338e-07
+ 2.17521163e-07 1.70289119e-07]
+RA orientations optimized.
+用户 9 的最小需求功率 p_req: 0.0036821915087303335
+用户 6 的最小需求功率 p_req: 0.005570861759901677
+用户 4 的最小需求功率 p_req: 0.008406980107241287
+用户 3 的最小需求功率 p_req: 0.013603496315329424
+用户 8 的最小需求功率 p_req: 0.02018329377280582
+用户 2 的最小需求功率 p_req: 0.032011388144524346
+用户 0 的最小需求功率 p_req: 0.04992256892592268
+用户 7 的最小需求功率 p_req: 0.07918721078993506
+用户 5 的最小需求功率 p_req: 0.12827528682452458
+用户 1 的最小需求功率 p_req: 0.2087249865686521
+优化完成
+Selected clients in round 0: [0 2 3 4 5 6 7 8 9]
+
+ | Global Training Round : 0 |
+
+| Global Round : 0 | Client: 0 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.241250
+| Global Round : 0 | Client: 0 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.021748
+| Global Round : 0 | Client: 0 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.662825
+| Global Round : 0 | Client: 0 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.311997
+| Global Round : 0 | Client: 0 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.883502
+| Global Round : 0 | Client: 2 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.306311
+| Global Round : 0 | Client: 2 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.129673
+| Global Round : 0 | Client: 2 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.865179
+| Global Round : 0 | Client: 2 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.536435
+| Global Round : 0 | Client: 2 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.142866
+| Global Round : 0 | Client: 3 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.361233
+| Global Round : 0 | Client: 3 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.245415
+| Global Round : 0 | Client: 3 | Local Epoch : 2 | [0/200 (0%)]	Loss: 2.011967
+| Global Round : 0 | Client: 3 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.700294
+| Global Round : 0 | Client: 3 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.276031
+| Global Round : 0 | Client: 4 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.379484
+| Global Round : 0 | Client: 4 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.218893
+| Global Round : 0 | Client: 4 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.926660
+| Global Round : 0 | Client: 4 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.533241
+| Global Round : 0 | Client: 4 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.074931
+| Global Round : 0 | Client: 5 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.254831
+| Global Round : 0 | Client: 5 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.104622
+| Global Round : 0 | Client: 5 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.881430
+| Global Round : 0 | Client: 5 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.604295
+| Global Round : 0 | Client: 5 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.436339
+| Global Round : 0 | Client: 6 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.301506
+| Global Round : 0 | Client: 6 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.175785
+| Global Round : 0 | Client: 6 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.917935
+| Global Round : 0 | Client: 6 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.597070
+| Global Round : 0 | Client: 6 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.195939
+| Global Round : 0 | Client: 7 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.367739
+| Global Round : 0 | Client: 7 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.149777
+| Global Round : 0 | Client: 7 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.766968
+| Global Round : 0 | Client: 7 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.277163
+| Global Round : 0 | Client: 7 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.127325
+| Global Round : 0 | Client: 8 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.308257
+| Global Round : 0 | Client: 8 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.173379
+| Global Round : 0 | Client: 8 | Local Epoch : 2 | [0/200 (0%)]	Loss: 2.021751
+| Global Round : 0 | Client: 8 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.718326
+| Global Round : 0 | Client: 8 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.470335
+| Global Round : 0 | Client: 9 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.300424
+| Global Round : 0 | Client: 9 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.115148
+| Global Round : 0 | Client: 9 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.913688
+| Global Round : 0 | Client: 9 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.627760
+| Global Round : 0 | Client: 9 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.383262
+/home/gyh/anaconda3/envs/pt_38py_env_FLRA/lib/python3.8/site-packages/cvxpy/reductions/solvers/solving_chain.py:356: FutureWarning: 
+    You specified your problem should be solved by ECOS. Starting in
+    CXVPY 1.6.0, ECOS will no longer be installed by default with CVXPY.
+    Please either add ECOS as an explicit install dependency to your project
+    or switch to our new default solver, Clarabel, by either not specifying a
+    solver argument or specifying ``solver=cp.CLARABEL``. To suppress this
+    warning while continuing to use ECOS, you can filter this warning using
+    Python's ``warnings`` module until you are using 1.6.0.
+    
+  warnings.warn(ECOS_DEP_DEPRECATION_MSG, FutureWarning)
+/home/gyh/anaconda3/envs/pt_38py_env_FLRA/lib/python3.8/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+  1%|          | 1/150 [00:05<13:42,  5.52s/it]average loss:   1.7424032401155545
+average local test accuracy: 0.2
+global test accuracy:  0.13623046875
+3D positions plotted.
+优化后的角度: 43.628375813800126
+优化后的角度: 52.29005450833002
+优化后的角度: 44.8044045889595
+优化后的角度: 53.415072004973084
+优化后的角度: 45.17386862905747
+优化后的角度: 88.76623803473205
+优化后的角度: 46.05453833189929
+优化后的角度: 49.26769668324951
+优化后的角度: 43.402227070412216
+优化后的角度: 43.410550337000295
+h参数 [2.43839513e-07 1.67608240e-07 2.26246082e-07 1.56054980e-07
+ 2.25272974e-07 2.39206250e-07 2.20414274e-07 2.00651171e-07
+ 2.40920529e-07 2.43210462e-07]
+RA orientations optimized.
+用户 3 的最小需求功率 p_req: 0.0040160173045070404
+用户 1 的最小需求功率 p_req: 0.006082617583939417
+用户 7 的最小需求功率 p_req: 0.008269455571239046
+用户 6 的最小需求功率 p_req: 0.01224831562110983
+用户 4 的最小需求功率 p_req: 0.019469042470190816
+用户 2 的最小需求功率 p_req: 0.031506209884432736
+用户 5 的最小需求功率 p_req: 0.048495672369781424
+用户 8 的最小需求功率 p_req: 0.07831223952809517
+用户 9 的最小需求功率 p_req: 0.12629587447222956
+用户 0 的最小需求功率 p_req: 0.20454326950625756
+优化完成
+Selected clients in round 1: [1 2 3 4 5 6 7 8 9]
+
+ | Global Training Round : 1 |
+
+| Global Round : 1 | Client: 1 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.190370
+| Global Round : 1 | Client: 1 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.428356
+| Global Round : 1 | Client: 1 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.094367
+| Global Round : 1 | Client: 1 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.645603
+| Global Round : 1 | Client: 1 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.803167
+| Global Round : 1 | Client: 2 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.233302
+| Global Round : 1 | Client: 2 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.622972
+| Global Round : 1 | Client: 2 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.134621
+| Global Round : 1 | Client: 2 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.085456
+| Global Round : 1 | Client: 2 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.988336
+| Global Round : 1 | Client: 3 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.184718
+| Global Round : 1 | Client: 3 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.510900
+| Global Round : 1 | Client: 3 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.372066
+| Global Round : 1 | Client: 3 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.911911
+| Global Round : 1 | Client: 3 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.722297
+| Global Round : 1 | Client: 4 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.022666
+| Global Round : 1 | Client: 4 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.302107
+| Global Round : 1 | Client: 4 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.207545
+| Global Round : 1 | Client: 4 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.093315
+| Global Round : 1 | Client: 4 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.838273
+| Global Round : 1 | Client: 5 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.457012
+| Global Round : 1 | Client: 5 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.766594
+| Global Round : 1 | Client: 5 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.586309
+| Global Round : 1 | Client: 5 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.152370
+| Global Round : 1 | Client: 5 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.160402
+| Global Round : 1 | Client: 6 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.446237
+| Global Round : 1 | Client: 6 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.714376
+| Global Round : 1 | Client: 6 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.236111
+| Global Round : 1 | Client: 6 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.920714
+| Global Round : 1 | Client: 6 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.822718
+| Global Round : 1 | Client: 7 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.311762
+| Global Round : 1 | Client: 7 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.657282
+| Global Round : 1 | Client: 7 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.131470
+| Global Round : 1 | Client: 7 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.957851
+| Global Round : 1 | Client: 7 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.138924
+| Global Round : 1 | Client: 8 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.787258
+| Global Round : 1 | Client: 8 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.026807
+| Global Round : 1 | Client: 8 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.688691
+| Global Round : 1 | Client: 8 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.359188
+| Global Round : 1 | Client: 8 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.018415
+| Global Round : 1 | Client: 9 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.523420
+| Global Round : 1 | Client: 9 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.817700
+| Global Round : 1 | Client: 9 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.432364
+| Global Round : 1 | Client: 9 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.126503
+| Global Round : 1 | Client: 9 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.229202
+  1%|▏         | 2/150 [00:10<13:25,  5.44s/it]average loss:   1.3610117899047003
+average local test accuracy: 0.19765625
+global test accuracy:  0.11669921875
+3D positions plotted.
+优化后的角度: 52.30329150674468
+优化后的角度: 48.414362718707956
+优化后的角度: 46.99366735535266
+优化后的角度: 47.87598565011568
+优化后的角度: 43.21084411462827
+优化后的角度: 88.76623803473205
+优化后的角度: 45.44919541134251
+优化后的角度: 47.95100105136023
+优化后的角度: 44.60915451367445
+优化后的角度: 51.811600951082255
+h参数 [1.72085527e-07 2.06967492e-07 2.12205972e-07 2.02759446e-07
+ 2.42933987e-07 2.39206250e-07 2.22080238e-07 2.05185789e-07
+ 2.29640331e-07 1.72446266e-07]
+RA orientations optimized.
+用户 0 的最小需求功率 p_req: 0.0036382208227893403
+用户 9 的最小需求功率 p_req: 0.005900694765323891
+用户 3 的最小需求功率 p_req: 0.008175496719152749
+用户 7 的最小需求功率 p_req: 0.01313123018699517
+用户 1 的最小需求功率 p_req: 0.021151389994675626
+用户 2 的最小需求功率 p_req: 0.03358935653020427
+用户 6 的最小需求功率 p_req: 0.05221100376935056
+用户 8 的最小需求功率 p_req: 0.08213655157993312
+用户 5 的最小需求功率 p_req: 0.1283349198859337
+用户 4 的最小需求功率 p_req: 0.20528947770245545
+优化完成
+Selected clients in round 2: [0 1 2 3 5 6 7 8 9]
+
+ | Global Training Round : 2 |
+
+| Global Round : 2 | Client: 0 | Local Epoch : 0 | [0/200 (0%)]	Loss: 3.053123
+| Global Round : 2 | Client: 0 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.556197
+| Global Round : 2 | Client: 0 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.084110
+| Global Round : 2 | Client: 0 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.852239
+| Global Round : 2 | Client: 0 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.878279
+| Global Round : 2 | Client: 1 | Local Epoch : 0 | [0/200 (0%)]	Loss: 1.556827
+| Global Round : 2 | Client: 1 | Local Epoch : 1 | [0/200 (0%)]	Loss: 0.824445
+| Global Round : 2 | Client: 1 | Local Epoch : 2 | [0/200 (0%)]	Loss: 0.584551
+| Global Round : 2 | Client: 1 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.600294
+| Global Round : 2 | Client: 1 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.642611
+| Global Round : 2 | Client: 2 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.065787
+| Global Round : 2 | Client: 2 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.448752
+| Global Round : 2 | Client: 2 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.178478
+| Global Round : 2 | Client: 2 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.875914
+| Global Round : 2 | Client: 2 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.954723
+| Global Round : 2 | Client: 3 | Local Epoch : 0 | [0/200 (0%)]	Loss: 1.500360
+| Global Round : 2 | Client: 3 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.003376
+| Global Round : 2 | Client: 3 | Local Epoch : 2 | [0/200 (0%)]	Loss: 0.816287
+| Global Round : 2 | Client: 3 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.785759
+| Global Round : 2 | Client: 3 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.707276
+| Global Round : 2 | Client: 5 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.928650
+| Global Round : 2 | Client: 5 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.712512
+| Global Round : 2 | Client: 5 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.225063
+| Global Round : 2 | Client: 5 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.211124
+| Global Round : 2 | Client: 5 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.115796
+| Global Round : 2 | Client: 6 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.485217
+| Global Round : 2 | Client: 6 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.470672
+| Global Round : 2 | Client: 6 | Local Epoch : 2 | [0/200 (0%)]	Loss: 0.940079
+| Global Round : 2 | Client: 6 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.774354
+| Global Round : 2 | Client: 6 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.658027
+| Global Round : 2 | Client: 7 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.645707
+| Global Round : 2 | Client: 7 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.581430
+| Global Round : 2 | Client: 7 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.109443
+| Global Round : 2 | Client: 7 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.079591
+| Global Round : 2 | Client: 7 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.106377
+| Global Round : 2 | Client: 8 | Local Epoch : 0 | [0/200 (0%)]	Loss: 3.051973
+| Global Round : 2 | Client: 8 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.789018
+| Global Round : 2 | Client: 8 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.480638
+| Global Round : 2 | Client: 8 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.229786
+| Global Round : 2 | Client: 8 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.728738
+| Global Round : 2 | Client: 9 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.939568
+| Global Round : 2 | Client: 9 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.486616
+| Global Round : 2 | Client: 9 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.248159
+| Global Round : 2 | Client: 9 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.369346
+| Global Round : 2 | Client: 9 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.006126
+  2%|▏         | 3/150 [00:16<13:18,  5.43s/it]

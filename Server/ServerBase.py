@@ -6,6 +6,7 @@ from utils import Accuracy
 
 class Server(object):
     def __init__(self,args, global_model,Loaders_train, Loaders_local_test, Loader_global_test, logger, device):
+        self.initial_global_model = copy.deepcopy(global_model)
         self.global_model = global_model
         self.args = args
         self.Loaders_train = Loaders_train

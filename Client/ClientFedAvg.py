@@ -52,3 +52,16 @@ class ClientFedAvg(Client):
             epoch_loss.append(sum(batch_loss)/len(batch_loss))
 
         return self.model.state_dict(),sum(epoch_loss) / len(epoch_loss)
+    
+    def obtain_loss(self):
+        self.model.to(self.device)
+        self.model.eval()
+        loss = 0
+        cnt = 0
+        for batch_idx, (X, y) in enumerate(self.trainloader):
+            X = X.to(self.device)
+            y = y.to(self.device)
+            _, p = self.model(X)
+            loss += self.ce(p,y).item()
+            cnt += 1
+        return loss/cnt

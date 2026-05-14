@@ -1,0 +1,379 @@
+nohup: 忽略输入
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+/home/gyh/anaconda3/envs/pt_38py_env_FLRA/lib/python3.8/site-packages/torchvision/datasets/mnist.py:498: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:180.)
+  return torch.from_numpy(parsed.astype(m[2], copy=False)).view(*s)
+1.9.0+cu111
+cuda
+<class 'argparse.Namespace'>
+per-client train sizes: [200, 200, 200, 200, 200, 200, 200, 200, 200, 200] ...
+min/mean/max: 200 200.0 200
+total train used: 2000 (should be 2000)
+Client 0 data distribution:
+[131, 1, 0, 0, 0, 0, 8, 52, 0, 0]
+Client 1 data distribution:
+[1, 62, 129, 0, 0, 0, 0, 0, 0, 0]
+Client 2 data distribution:
+[1, 15, 0, 127, 0, 2, 47, 0, 0, 0]
+Client 3 data distribution:
+[2, 124, 0, 66, 0, 0, 0, 0, 0, 0]
+Client 4 data distribution:
+[5, 27, 22, 0, 2, 0, 7, 129, 0, 0]
+Client 5 data distribution:
+[39, 1, 13, 0, 129, 2, 0, 3, 2, 3]
+Client 6 data distribution:
+[0, 0, 0, 61, 0, 0, 131, 0, 0, 0]
+Client 7 data distribution:
+[3, 40, 0, 2, 0, 134, 0, 6, 0, 7]
+Client 8 data distribution:
+[3, 2, 52, 1, 1, 0, 0, 0, 8, 125]
+Client 9 data distribution:
+[1, 26, 5, 0, 5, 16, 0, 1, 138, 0]
+Checkpoint dir: ./checkpoint/FMNIST/
+CNN
+# model parameters: 15722
+---------------------------------------------------------------Training---------------------------------------------------------------
+------------------ Experiment 1 ------------------
+Namespace(CPUcycles_per_sample=80, NOMA_method='NOMA', PS_method='maximum_PS', RO_method='proposed_RO', alg='FedAvg', bandwidth=10000000.0, batch_size=64, beta=0.1, client_computation_capacity=array([1.e+09, 1.e+09, 1.e+09, 1.e+09, 1.e+09, 1.e+09, 1.e+09, 1.e+09,
+       1.e+09, 1.e+09]), clip_grad=None, code_len=32, dataset='FMNIST', dataspilt='fixed_m_iid', eval_only=False, gamma=0.05, lam=0.04, latency_threshold=0.1, local_ep=5, log_frq=5, lr=0.001, lr_sh_rate=10, m=200, mi=4, model='CNN', num_classes=10, num_clients=10, num_epochs=150, num_scatterers=5, op_method='proposed_with_h_order', part=1, phi_max=1.5707963267948966, random_not='random', sampling_rate=1, save_model=True, seed=0, std=2, temp=0.5, transmit_power_max=4, upload_model=True, use_lrschd=False, wavelength=0.1, zipf=0)
+  0%|          | 0/150 [00:00<?, ?it/s]3D positions plotted.
+优化后的角度: 43.2530706798616
+优化后的角度: 43.04663629936616
+优化后的角度: 53.98621565044685
+优化后的角度: 51.032186617783616
+优化后的角度: 44.06861436336369
+优化后的角度: 88.76623803473205
+优化后的角度: 44.95144349438032
+优化后的角度: 47.357429783677404
+优化后的角度: 47.387669252283615
+优化后的角度: 43.12258636806412
+h参数 [2.42033099e-07 2.45783762e-07 1.65423735e-07 1.79429733e-07
+ 2.32980855e-07 2.39206250e-07 2.23896897e-07 2.07823251e-07
+ 2.03434504e-07 2.44233676e-07]
+RA orientations optimized.
+优化完成
+Selected clients in round 0: [2 3 6]
+
+ | Global Training Round : 0 |
+
+| Global Round : 0 | Client: 2 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.386955
+| Global Round : 0 | Client: 2 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.204514
+| Global Round : 0 | Client: 2 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.855106
+| Global Round : 0 | Client: 2 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.427155
+| Global Round : 0 | Client: 2 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.229289
+| Global Round : 0 | Client: 3 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.400354
+| Global Round : 0 | Client: 3 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.188563
+| Global Round : 0 | Client: 3 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.855739
+| Global Round : 0 | Client: 3 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.390499
+| Global Round : 0 | Client: 3 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.993969
+| Global Round : 0 | Client: 6 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.378070
+| Global Round : 0 | Client: 6 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.196295
+| Global Round : 0 | Client: 6 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.929572
+| Global Round : 0 | Client: 6 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.561214
+| Global Round : 0 | Client: 6 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.034673
+/home/gyh/anaconda3/envs/pt_38py_env_FLRA/lib/python3.8/site-packages/cvxpy/reductions/solvers/solving_chain.py:356: FutureWarning: 
+    You specified your problem should be solved by ECOS. Starting in
+    CXVPY 1.6.0, ECOS will no longer be installed by default with CVXPY.
+    Please either add ECOS as an explicit install dependency to your project
+    or switch to our new default solver, Clarabel, by either not specifying a
+    solver argument or specifying ``solver=cp.CLARABEL``. To suppress this
+    warning while continuing to use ECOS, you can filter this warning using
+    Python's ``warnings`` module until you are using 1.6.0.
+    
+  warnings.warn(ECOS_DEP_DEPRECATION_MSG, FutureWarning)
+/home/gyh/anaconda3/envs/pt_38py_env_FLRA/lib/python3.8/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+  1%|          | 1/150 [00:04<11:26,  4.61s/it]average loss:   1.7005995723936291
+average local test accuracy: 0.1
+global test accuracy:  0.09912109375
+3D positions plotted.
+优化后的角度: 50.392724022686245
+优化后的角度: 47.001265966049935
+优化后的角度: 52.33519839117139
+优化后的角度: 44.17309261986601
+优化后的角度: 46.581133978364726
+优化后的角度: 88.76623803473205
+优化后的角度: 44.02318311413369
+优化后的角度: 52.182727125674454
+优化后的角度: 43.887641597407736
+优化后的角度: 48.059964843828446
+h参数 [1.91223707e-07 2.12694365e-07 1.70158912e-07 2.35996293e-07
+ 2.16393019e-07 2.39206250e-07 2.35597141e-07 1.65832364e-07
+ 2.36913433e-07 2.02678294e-07]
+RA orientations optimized.
+优化完成
+Selected clients in round 1: [1 2 7]
+
+ | Global Training Round : 1 |
+
+| Global Round : 1 | Client: 1 | Local Epoch : 0 | [0/200 (0%)]	Loss: 4.400764
+| Global Round : 1 | Client: 1 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.607965
+| Global Round : 1 | Client: 1 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.954358
+| Global Round : 1 | Client: 1 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.569926
+| Global Round : 1 | Client: 1 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.367737
+| Global Round : 1 | Client: 2 | Local Epoch : 0 | [0/200 (0%)]	Loss: 1.209691
+| Global Round : 1 | Client: 2 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.044628
+| Global Round : 1 | Client: 2 | Local Epoch : 2 | [0/200 (0%)]	Loss: 0.852957
+| Global Round : 1 | Client: 2 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.916985
+| Global Round : 1 | Client: 2 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.050696
+| Global Round : 1 | Client: 7 | Local Epoch : 0 | [0/200 (0%)]	Loss: 3.888952
+| Global Round : 1 | Client: 7 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.530334
+| Global Round : 1 | Client: 7 | Local Epoch : 2 | [0/200 (0%)]	Loss: 2.044528
+| Global Round : 1 | Client: 7 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.832524
+| Global Round : 1 | Client: 7 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.579808
+  1%|▏         | 2/150 [00:09<11:34,  4.70s/it]average loss:   1.7460074305534363
+average local test accuracy: 0.04791666666666667
+global test accuracy:  0.10205078125
+3D positions plotted.
+优化后的角度: 49.468507144828074
+优化后的角度: 49.11561761623483
+优化后的角度: 44.47190819110689
+优化后的角度: 44.234501747097816
+优化后的角度: 44.71259278621893
+优化后的角度: 88.76623803473205
+优化后的角度: 48.232728973488804
+优化后的角度: 52.71760881905064
+优化后的角度: 44.11295707697115
+优化后的角度: 52.21406502507293
+h参数 [1.92273414e-07 1.96828883e-07 2.31222538e-07 2.30642398e-07
+ 2.29170925e-07 2.39206250e-07 1.98116239e-07 1.64607453e-07
+ 2.32913227e-07 1.76145017e-07]
+RA orientations optimized.
+优化完成
+Selected clients in round 2: [4 7 9]
+
+ | Global Training Round : 2 |
+
+| Global Round : 2 | Client: 4 | Local Epoch : 0 | [0/200 (0%)]	Loss: 3.315734
+| Global Round : 2 | Client: 4 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.382065
+| Global Round : 2 | Client: 4 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.958613
+| Global Round : 2 | Client: 4 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.870085
+| Global Round : 2 | Client: 4 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.707578
+| Global Round : 2 | Client: 7 | Local Epoch : 0 | [0/200 (0%)]	Loss: 1.882152
+| Global Round : 2 | Client: 7 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.499174
+| Global Round : 2 | Client: 7 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.244504
+| Global Round : 2 | Client: 7 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.325568
+| Global Round : 2 | Client: 7 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.727999
+| Global Round : 2 | Client: 9 | Local Epoch : 0 | [0/200 (0%)]	Loss: 3.544479
+| Global Round : 2 | Client: 9 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.411628
+| Global Round : 2 | Client: 9 | Local Epoch : 2 | [0/200 (0%)]	Loss: 2.240264
+| Global Round : 2 | Client: 9 | Local Epoch : 3 | [0/200 (0%)]	Loss: 2.019529
+| Global Round : 2 | Client: 9 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.906518
+  2%|▏         | 3/150 [00:14<11:31,  4.71s/it]average loss:   1.9095630301369562
+average local test accuracy: 0.0
+global test accuracy:  0.10205078125
+3D positions plotted.
+优化后的角度: 43.73609395496401
+优化后的角度: 47.15206500786013
+优化后的角度: 46.34242884117353
+优化后的角度: 45.374816769200535
+优化后的角度: 45.904751621542296
+优化后的角度: 88.76623803473205
+优化后的角度: 43.97838532670546
+优化后的角度: 44.727941911013836
+优化后的角度: 43.915659669297256
+优化后的角度: 47.24127575093691
+h参数 [2.36614682e-07 2.13018476e-07 2.17711403e-07 2.23091567e-07
+ 2.16331992e-07 2.39206250e-07 2.34584551e-07 2.29063761e-07
+ 2.34990715e-07 2.14421841e-07]
+RA orientations optimized.
+优化完成
+Selected clients in round 3: [1 9]
+
+ | Global Training Round : 3 |
+
+| Global Round : 3 | Client: 1 | Local Epoch : 0 | [0/200 (0%)]	Loss: 1.948878
+| Global Round : 3 | Client: 1 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.643954
+| Global Round : 3 | Client: 1 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.287505
+| Global Round : 3 | Client: 1 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.934860
+| Global Round : 3 | Client: 1 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.655060
+| Global Round : 3 | Client: 9 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.263522
+| Global Round : 3 | Client: 9 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.934787
+| Global Round : 3 | Client: 9 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.631076
+| Global Round : 3 | Client: 9 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.474709
+| Global Round : 3 | Client: 9 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.157829
+  3%|▎         | 4/150 [00:18<11:05,  4.56s/it]average loss:   1.4201839645703633
+average local test accuracy: 0.08229166666666667
+global test accuracy:  0.1025390625
+3D positions plotted.
+优化后的角度: 43.106292007147324
+优化后的角度: 43.548517153099965
+优化后的角度: 45.23634519505576
+优化后的角度: 45.284764191712036
+优化后的角度: 47.69250675275467
+优化后的角度: 88.76623803473205
+优化后的角度: 42.736421357131334
+优化后的角度: 43.82012643881998
+优化后的角度: 43.50791077952241
+优化后的角度: 43.630927072614426
+h参数 [2.44427754e-07 2.41825098e-07 2.22348195e-07 2.24477518e-07
+ 2.11966536e-07 2.39206250e-07 2.49793292e-07 2.36870179e-07
+ 2.39859879e-07 2.38634995e-07]
+RA orientations optimized.
+优化完成
+Selected clients in round 4: [2 4]
+
+ | Global Training Round : 4 |
+
+| Global Round : 4 | Client: 2 | Local Epoch : 0 | [0/200 (0%)]	Loss: 4.269222
+| Global Round : 4 | Client: 2 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.690251
+| Global Round : 4 | Client: 2 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.978756
+| Global Round : 4 | Client: 2 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.405827
+| Global Round : 4 | Client: 2 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.223955
+| Global Round : 4 | Client: 4 | Local Epoch : 0 | [0/200 (0%)]	Loss: 3.179017
+| Global Round : 4 | Client: 4 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.503786
+| Global Round : 4 | Client: 4 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.757049
+| Global Round : 4 | Client: 4 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.594263
+| Global Round : 4 | Client: 4 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.461291
+  3%|▎         | 5/150 [00:22<10:43,  4.44s/it]average loss:   1.9823913375536604
+average local test accuracy: 0.0
+global test accuracy:  0.24609375
+3D positions plotted.
+优化后的角度: 51.55412070432474
+优化后的角度: 47.34987113143299
+优化后的角度: 42.64964833603386
+优化后的角度: 43.23778918227926
+优化后的角度: 46.064206283737825
+优化后的角度: 88.76623803473205
+优化后的角度: 48.951794088237136
+优化后的角度: 46.91904012054879
+优化后的角度: 43.98399600040147
+优化后的角度: 45.88784484699606
+h参数 [1.66672806e-07 2.10076331e-07 2.50853043e-07 2.44683133e-07
+ 2.14329063e-07 2.39206250e-07 2.03315857e-07 2.17663610e-07
+ 2.35018016e-07 2.29598031e-07]
+RA orientations optimized.
+优化完成
+Selected clients in round 5: [0 6 8]
+
+ | Global Training Round : 5 |
+
+| Global Round : 5 | Client: 0 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.829072
+| Global Round : 5 | Client: 0 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.378165
+| Global Round : 5 | Client: 0 | Local Epoch : 2 | [0/200 (0%)]	Loss: 2.152085
+| Global Round : 5 | Client: 0 | Local Epoch : 3 | [0/200 (0%)]	Loss: 2.036608
+| Global Round : 5 | Client: 0 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.898793
+| Global Round : 5 | Client: 6 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.102664
+| Global Round : 5 | Client: 6 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.682950
+| Global Round : 5 | Client: 6 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.218402
+| Global Round : 5 | Client: 6 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.893127
+| Global Round : 5 | Client: 6 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.671079
+| Global Round : 5 | Client: 8 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.941096
+| Global Round : 5 | Client: 8 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.300530
+| Global Round : 5 | Client: 8 | Local Epoch : 2 | [0/200 (0%)]	Loss: 2.126774
+| Global Round : 5 | Client: 8 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.970127
+| Global Round : 5 | Client: 8 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.791824
+  4%|▍         | 6/150 [00:27<10:36,  4.42s/it]average loss:   1.8369073139296637
+average local test accuracy: 0.1
+global test accuracy:  0.26611328125
+3D positions plotted.
+优化后的角度: 43.41552744184378
+优化后的角度: 45.77747249435748
+优化后的角度: 48.714386511859296
+优化后的角度: 52.02091636481843
+优化后的角度: 45.0965943121716
+优化后的角度: 88.76623803473205
+优化后的角度: 46.060995813704416
+优化后的角度: 46.47906198868014
+优化后的角度: 53.663730500166125
+优化后的角度: 44.468182330254514
+h参数 [2.42513434e-07 2.17126265e-07 2.06055508e-07 1.66682681e-07
+ 2.29412188e-07 2.39206250e-07 2.20193312e-07 2.10883529e-07
+ 1.60179301e-07 2.32046685e-07]
+RA orientations optimized.
+优化完成
+Selected clients in round 6: [2 3 8]
+
+ | Global Training Round : 6 |
+
+| Global Round : 6 | Client: 2 | Local Epoch : 0 | [0/200 (0%)]	Loss: 1.647473
+| Global Round : 6 | Client: 2 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.198536
+| Global Round : 6 | Client: 2 | Local Epoch : 2 | [0/200 (0%)]	Loss: 0.923654
+| Global Round : 6 | Client: 2 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.114478
+| Global Round : 6 | Client: 2 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.597457
+| Global Round : 6 | Client: 3 | Local Epoch : 0 | [0/200 (0%)]	Loss: 1.725853
+| Global Round : 6 | Client: 3 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.070500
+| Global Round : 6 | Client: 3 | Local Epoch : 2 | [0/200 (0%)]	Loss: 0.706264
+| Global Round : 6 | Client: 3 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.669695
+| Global Round : 6 | Client: 3 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.846553
+| Global Round : 6 | Client: 8 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.607703
+| Global Round : 6 | Client: 8 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.140574
+| Global Round : 6 | Client: 8 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.866863
+| Global Round : 6 | Client: 8 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.632728
+| Global Round : 6 | Client: 8 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.305649
+  5%|▍         | 7/150 [00:31<10:37,  4.46s/it]average loss:   1.1878184629811182
+average local test accuracy: 0.09010416666666667
+global test accuracy:  0.18994140625
+3D positions plotted.
+优化后的角度: 47.21697939280938
+优化后的角度: 49.7589962058458
+优化后的角度: 44.884387324591636
+优化后的角度: 53.99235230660044
+优化后的角度: 42.632972064531295
+优化后的角度: 88.76623803473205
+优化后的角度: 43.498511426653906
+优化后的角度: 43.5755563991949
+优化后的角度: 45.318648500581936
+优化后的角度: 47.910460908534304
+h参数 [2.05258054e-07 1.97456027e-07 2.23573587e-07 1.48263247e-07
+ 2.50349050e-07 2.39206250e-07 2.39487252e-07 2.40545010e-07
+ 2.21590704e-07 2.01911995e-07]
+RA orientations optimized.
+优化完成
+Selected clients in round 7: [1 3 8]
+
+ | Global Training Round : 7 |
+
+| Global Round : 7 | Client: 1 | Local Epoch : 0 | [0/200 (0%)]	Loss: 1.533226
+| Global Round : 7 | Client: 1 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.081090
+| Global Round : 7 | Client: 1 | Local Epoch : 2 | [0/200 (0%)]	Loss: 0.795142
+| Global Round : 7 | Client: 1 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.561671
+| Global Round : 7 | Client: 1 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.395800
+| Global Round : 7 | Client: 3 | Local Epoch : 0 | [0/200 (0%)]	Loss: 0.759235
+| Global Round : 7 | Client: 3 | Local Epoch : 1 | [0/200 (0%)]	Loss: 0.518269
+| Global Round : 7 | Client: 3 | Local Epoch : 2 | [0/200 (0%)]	Loss: 0.647327
+| Global Round : 7 | Client: 3 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.559612
+| Global Round : 7 | Client: 3 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.401278
+| Global Round : 7 | Client: 8 | Local Epoch : 0 | [0/200 (0%)]	Loss: 2.551148
+| Global Round : 7 | Client: 8 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.942876
+| Global Round : 7 | Client: 8 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.390378
+| Global Round : 7 | Client: 8 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.192212
+| Global Round : 7 | Client: 8 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.114473
+  5%|▌         | 8/150 [00:35<10:29,  4.44s/it]average loss:   0.9281990660561457
+average local test accuracy: 0.184375
+global test accuracy:  0.18115234375
+3D positions plotted.
+优化后的角度: 48.253527706829075
+优化后的角度: 46.566913211025025
+优化后的角度: 50.40497840358443
+优化后的角度: 43.15707663379434
+优化后的角度: 44.50285588923646
+优化后的角度: 88.76623803473205
+优化后的角度: 50.93886082091391
+优化后的角度: 43.66257656179944
+优化后的角度: 50.50517478762462
+优化后的角度: 48.69576444795011
+h参数 [2.00745519e-07 2.08965130e-07 1.94306191e-07 2.44105356e-07
+ 2.29869647e-07 2.39206250e-07 1.79375570e-07 2.39364394e-07
+ 1.76355669e-07 2.06096845e-07]
+RA orientations optimized.
+优化完成
+Selected clients in round 8: [4 6 8]
+
+ | Global Training Round : 8 |
+
+| Global Round : 8 | Client: 4 | Local Epoch : 0 | [0/200 (0%)]	Loss: 3.727519
+| Global Round : 8 | Client: 4 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.215248
+| Global Round : 8 | Client: 4 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.678226
+| Global Round : 8 | Client: 4 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.505617
+| Global Round : 8 | Client: 4 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.267904
+| Global Round : 8 | Client: 6 | Local Epoch : 0 | [0/200 (0%)]	Loss: 3.671809
+| Global Round : 8 | Client: 6 | Local Epoch : 1 | [0/200 (0%)]	Loss: 2.282506
+| Global Round : 8 | Client: 6 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.617792
+| Global Round : 8 | Client: 6 | Local Epoch : 3 | [0/200 (0%)]	Loss: 1.220753
+| Global Round : 8 | Client: 6 | Local Epoch : 4 | [0/200 (0%)]	Loss: 1.042393
+| Global Round : 8 | Client: 8 | Local Epoch : 0 | [0/200 (0%)]	Loss: 1.798400
+| Global Round : 8 | Client: 8 | Local Epoch : 1 | [0/200 (0%)]	Loss: 1.162851
+| Global Round : 8 | Client: 8 | Local Epoch : 2 | [0/200 (0%)]	Loss: 1.134513
+| Global Round : 8 | Client: 8 | Local Epoch : 3 | [0/200 (0%)]	Loss: 0.797890
+| Global Round : 8 | Client: 8 | Local Epoch : 4 | [0/200 (0%)]	Loss: 0.670517
+  6%|▌         | 9/150 [00:40<10:25,  4.44s/it]

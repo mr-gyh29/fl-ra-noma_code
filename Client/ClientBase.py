@@ -31,8 +31,14 @@ class Client(object):
         self.kld = nn.KLDivLoss()
         self.mse = nn.MSELoss()
         self.model = copy.deepcopy(model)
-   
-    
+        # self.data_size = len(self.trainloader.dataset)
+        idxs = self.trainloader.dataset.idxs
+        data = self.trainloader.dataset.dataset.data
+        local_data = data[idxs]
+        # self.dataset_size = local_data.element_size() * local_data.nelement() / (1024 * 1024) * 8 * 10e5# 单位bit
+        # self.model_size = sum(param.numel() for param in self.model.parameters()) * 32 / (1024 * 1024) * 10e5 #单位bit
+        
+
     def test_accuracy(self):
         self.model.eval()
         accuracy = 0

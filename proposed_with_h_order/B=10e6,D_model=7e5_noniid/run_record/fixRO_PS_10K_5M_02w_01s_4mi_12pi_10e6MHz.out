@@ -1,0 +1,460 @@
+nohup: 忽略输入
+<frozen importlib._bootstrap>:219: RuntimeWarning: scipy._lib.messagestream.MessageStream size changed, may indicate binary incompatibility. Expected 56 from C header, got 64 from PyObject
+/home/gyh/anaconda3/envs/pt_38py_env_FLRA/lib/python3.8/site-packages/torchvision/datasets/mnist.py:498: UserWarning: The given NumPy array is not writeable, and PyTorch does not support non-writeable tensors. This means you can write to the underlying (supposedly non-writeable) NumPy array using the tensor. You may want to copy the array to protect its data or make it writeable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at  /pytorch/torch/csrc/utils/tensor_numpy.cpp:180.)
+  return torch.from_numpy(parsed.astype(m[2], copy=False)).view(*s)
+1.9.0+cu111
+cuda
+<class 'argparse.Namespace'>
+10
+10
+Client 0 data distribution:
+[101, 0, 0, 135, 0, 0, 1, 19, 0, 0]
+Client 1 data distribution:
+[0, 0, 0, 0, 372, 1, 55, 0, 20, 0]
+Client 2 data distribution:
+[0, 84, 0, 0, 0, 64, 125, 0, 495, 0]
+Client 3 data distribution:
+[0, 0, 74, 0, 0, 0, 0, 244, 0, 578]
+Client 4 data distribution:
+[200, 183, 0, 73, 7, 0, 29, 20, 0, 0]
+Client 5 data distribution:
+[2, 1, 518, 0, 9, 110, 0, 0, 0, 0]
+Client 6 data distribution:
+[0, 0, 0, 360, 4, 41, 363, 0, 0, 0]
+Client 7 data distribution:
+[0, 39, 0, 1, 147, 370, 0, 12, 5, 2]
+Client 8 data distribution:
+[247, 87, 0, 0, 0, 0, 0, 242, 0, 0]
+Client 9 data distribution:
+[2, 168, 1, 3, 0, 0, 1, 50, 28, 3]
+Checkpoint dir: ./checkpoint/FMNIST/
+CNN
+# model parameters: 15722
+---------------------------------------------------------------Training---------------------------------------------------------------
+------------------ Experiment 1 ------------------
+Namespace(CPUcycles_per_sample=80, PS_method='proposed_PS', RO_method='fixed_RO', alg='FedAvg', bandwidth=10000000.0, batch_size=64, beta=0.1, client_computation_capacity=array([1.e+09, 1.e+09, 1.e+09, 1.e+09, 1.e+09, 1.e+09, 1.e+09, 1.e+09,
+       1.e+09, 1.e+09]), clip_grad=None, code_len=32, dataset='FMNIST', eval_only=False, gamma=0.05, lam=0.05, latency_threshold=0.1, local_ep=5, log_frq=5, lr=0.001, lr_sh_rate=10, mi=4, model='CNN', num_classes=10, num_clients=10, num_epochs=100, num_scatterers=5, op_method='proposed_with_h_order', part=0.1, phi_max=1.5707963267948966, sampling_rate=1, save_model=True, seed=0, std=2, temp=0.5, transmit_power_max=0.2, upload_model=True, use_lrschd=False, wavelength=0.1, zipf=0)
+  0%|          | 0/100 [00:00<?, ?it/s]3D positions plotted.
+用户 0 固定方向与 BS 夹角 φ_kB = 44.69 度
+用户 1 固定方向与 BS 夹角 φ_kB = 45.15 度
+用户 2 固定方向与 BS 夹角 φ_kB = 45.85 度
+用户 3 固定方向与 BS 夹角 φ_kB = 44.04 度
+用户 4 固定方向与 BS 夹角 φ_kB = 52.04 度
+用户 5 固定方向与 BS 夹角 φ_kB = 48.03 度
+用户 6 固定方向与 BS 夹角 φ_kB = 44.55 度
+用户 7 固定方向与 BS 夹角 φ_kB = 44.83 度
+用户 8 固定方向与 BS 夹角 φ_kB = 51.26 度
+用户 9 固定方向与 BS 夹角 φ_kB = 45.00 度
+h参数 [2.32610526e-08 1.97631534e-08 1.45275385e-08 1.78267684e-08
+ 3.83026854e-09 7.78252468e-09 2.71728394e-08 1.64221527e-08
+ 3.96007060e-09 7.59131613e-09]
+RA orientations optimized.
+优化完成
+Selected clients in round 0: [0 2 4 7 9]
+
+ | Global Training Round : 0 |
+
+| Global Round : 0 | Client: 0 | Local Epoch : 0 | [0/294 (0%)]	Loss: 2.326491
+| Global Round : 0 | Client: 0 | Local Epoch : 1 | [0/294 (0%)]	Loss: 2.104260
+| Global Round : 0 | Client: 0 | Local Epoch : 2 | [0/294 (0%)]	Loss: 1.779921
+| Global Round : 0 | Client: 0 | Local Epoch : 3 | [0/294 (0%)]	Loss: 1.366066
+| Global Round : 0 | Client: 0 | Local Epoch : 4 | [0/294 (0%)]	Loss: 1.298510
+| Global Round : 0 | Client: 2 | Local Epoch : 0 | [0/827 (0%)]	Loss: 2.365337
+| Global Round : 0 | Client: 2 | Local Epoch : 0 | [640/827 (83%)]	Loss: 1.779492
+| Global Round : 0 | Client: 2 | Local Epoch : 1 | [0/827 (0%)]	Loss: 1.235195
+| Global Round : 0 | Client: 2 | Local Epoch : 1 | [640/827 (83%)]	Loss: 1.188586
+| Global Round : 0 | Client: 2 | Local Epoch : 2 | [0/827 (0%)]	Loss: 0.957508
+| Global Round : 0 | Client: 2 | Local Epoch : 2 | [640/827 (83%)]	Loss: 0.884835
+| Global Round : 0 | Client: 2 | Local Epoch : 3 | [0/827 (0%)]	Loss: 0.713080
+| Global Round : 0 | Client: 2 | Local Epoch : 3 | [640/827 (83%)]	Loss: 0.688960
+| Global Round : 0 | Client: 2 | Local Epoch : 4 | [0/827 (0%)]	Loss: 0.715548
+| Global Round : 0 | Client: 2 | Local Epoch : 4 | [640/827 (83%)]	Loss: 0.750022
+| Global Round : 0 | Client: 4 | Local Epoch : 0 | [0/514 (0%)]	Loss: 2.325054
+| Global Round : 0 | Client: 4 | Local Epoch : 1 | [0/514 (0%)]	Loss: 2.078275
+| Global Round : 0 | Client: 4 | Local Epoch : 2 | [0/514 (0%)]	Loss: 1.482880
+| Global Round : 0 | Client: 4 | Local Epoch : 3 | [0/514 (0%)]	Loss: 1.244780
+| Global Round : 0 | Client: 4 | Local Epoch : 4 | [0/514 (0%)]	Loss: 1.307543
+| Global Round : 0 | Client: 7 | Local Epoch : 0 | [0/590 (0%)]	Loss: 2.359935
+| Global Round : 0 | Client: 7 | Local Epoch : 1 | [0/590 (0%)]	Loss: 1.444281
+| Global Round : 0 | Client: 7 | Local Epoch : 2 | [0/590 (0%)]	Loss: 0.762328
+| Global Round : 0 | Client: 7 | Local Epoch : 3 | [0/590 (0%)]	Loss: 0.585835
+| Global Round : 0 | Client: 7 | Local Epoch : 4 | [0/590 (0%)]	Loss: 0.334203
+| Global Round : 0 | Client: 9 | Local Epoch : 0 | [0/305 (0%)]	Loss: 2.282021
+| Global Round : 0 | Client: 9 | Local Epoch : 1 | [0/305 (0%)]	Loss: 2.102293
+| Global Round : 0 | Client: 9 | Local Epoch : 2 | [0/305 (0%)]	Loss: 1.607875
+| Global Round : 0 | Client: 9 | Local Epoch : 3 | [0/305 (0%)]	Loss: 1.275435
+| Global Round : 0 | Client: 9 | Local Epoch : 4 | [0/305 (0%)]	Loss: 0.903370
+/home/gyh/anaconda3/envs/pt_38py_env_FLRA/lib/python3.8/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /pytorch/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+  1%|          | 1/100 [00:02<03:55,  2.38s/it]average loss:   1.3871050722400349
+average local test accuracy: 0.39947916666666666
+global test accuracy:  0.08984375
+3D positions plotted.
+用户 0 固定方向与 BS 夹角 φ_kB = 44.69 度
+用户 1 固定方向与 BS 夹角 φ_kB = 45.15 度
+用户 2 固定方向与 BS 夹角 φ_kB = 45.85 度
+用户 3 固定方向与 BS 夹角 φ_kB = 44.04 度
+用户 4 固定方向与 BS 夹角 φ_kB = 52.04 度
+用户 5 固定方向与 BS 夹角 φ_kB = 48.03 度
+用户 6 固定方向与 BS 夹角 φ_kB = 44.55 度
+用户 7 固定方向与 BS 夹角 φ_kB = 44.83 度
+用户 8 固定方向与 BS 夹角 φ_kB = 51.26 度
+用户 9 固定方向与 BS 夹角 φ_kB = 45.00 度
+h参数 [2.35272280e-08 1.41070959e-08 8.13549800e-09 2.27249808e-08
+ 3.98377586e-09 8.25674383e-09 1.56345196e-08 1.25784995e-08
+ 4.33534319e-09 9.80568279e-09]
+RA orientations optimized.
+优化完成
+Selected clients in round 1: [1 2 3 4 9]
+
+ | Global Training Round : 1 |
+
+| Global Round : 1 | Client: 1 | Local Epoch : 0 | [0/510 (0%)]	Loss: 2.231833
+| Global Round : 1 | Client: 1 | Local Epoch : 1 | [0/510 (0%)]	Loss: 0.927130
+| Global Round : 1 | Client: 1 | Local Epoch : 2 | [0/510 (0%)]	Loss: 1.081144
+| Global Round : 1 | Client: 1 | Local Epoch : 3 | [0/510 (0%)]	Loss: 0.867531
+| Global Round : 1 | Client: 1 | Local Epoch : 4 | [0/510 (0%)]	Loss: 0.729025
+| Global Round : 1 | Client: 2 | Local Epoch : 0 | [0/827 (0%)]	Loss: 1.924320
+| Global Round : 1 | Client: 2 | Local Epoch : 0 | [640/827 (83%)]	Loss: 0.997583
+| Global Round : 1 | Client: 2 | Local Epoch : 1 | [0/827 (0%)]	Loss: 0.885996
+| Global Round : 1 | Client: 2 | Local Epoch : 1 | [640/827 (83%)]	Loss: 0.529783
+| Global Round : 1 | Client: 2 | Local Epoch : 2 | [0/827 (0%)]	Loss: 0.678992
+| Global Round : 1 | Client: 2 | Local Epoch : 2 | [640/827 (83%)]	Loss: 0.703340
+| Global Round : 1 | Client: 2 | Local Epoch : 3 | [0/827 (0%)]	Loss: 0.640464
+| Global Round : 1 | Client: 2 | Local Epoch : 3 | [640/827 (83%)]	Loss: 0.430609
+| Global Round : 1 | Client: 2 | Local Epoch : 4 | [0/827 (0%)]	Loss: 0.525083
+| Global Round : 1 | Client: 2 | Local Epoch : 4 | [640/827 (83%)]	Loss: 0.672754
+| Global Round : 1 | Client: 3 | Local Epoch : 0 | [0/926 (0%)]	Loss: 3.461298
+| Global Round : 1 | Client: 3 | Local Epoch : 0 | [640/926 (71%)]	Loss: 1.065064
+| Global Round : 1 | Client: 3 | Local Epoch : 1 | [0/926 (0%)]	Loss: 0.861566
+| Global Round : 1 | Client: 3 | Local Epoch : 1 | [640/926 (71%)]	Loss: 0.940761
+| Global Round : 1 | Client: 3 | Local Epoch : 2 | [0/926 (0%)]	Loss: 0.763604
+| Global Round : 1 | Client: 3 | Local Epoch : 2 | [640/926 (71%)]	Loss: 0.397190
+| Global Round : 1 | Client: 3 | Local Epoch : 3 | [0/926 (0%)]	Loss: 0.469808
+| Global Round : 1 | Client: 3 | Local Epoch : 3 | [640/926 (71%)]	Loss: 0.240637
+| Global Round : 1 | Client: 3 | Local Epoch : 4 | [0/926 (0%)]	Loss: 0.391524
+| Global Round : 1 | Client: 3 | Local Epoch : 4 | [640/926 (71%)]	Loss: 0.459609
+| Global Round : 1 | Client: 4 | Local Epoch : 0 | [0/514 (0%)]	Loss: 1.923390
+| Global Round : 1 | Client: 4 | Local Epoch : 1 | [0/514 (0%)]	Loss: 0.977172
+| Global Round : 1 | Client: 4 | Local Epoch : 2 | [0/514 (0%)]	Loss: 1.097236
+| Global Round : 1 | Client: 4 | Local Epoch : 3 | [0/514 (0%)]	Loss: 0.872945
+| Global Round : 1 | Client: 4 | Local Epoch : 4 | [0/514 (0%)]	Loss: 0.956343
+| Global Round : 1 | Client: 9 | Local Epoch : 0 | [0/305 (0%)]	Loss: 1.582001
+| Global Round : 1 | Client: 9 | Local Epoch : 1 | [0/305 (0%)]	Loss: 0.763838
+| Global Round : 1 | Client: 9 | Local Epoch : 2 | [0/305 (0%)]	Loss: 0.683013
+| Global Round : 1 | Client: 9 | Local Epoch : 3 | [0/305 (0%)]	Loss: 0.519630
+| Global Round : 1 | Client: 9 | Local Epoch : 4 | [0/305 (0%)]	Loss: 0.653217
+  2%|▏         | 2/100 [00:05<04:11,  2.57s/it]average loss:   0.8556575307108106
+average local test accuracy: 0.420703125
+global test accuracy:  0.3020833333333333
+3D positions plotted.
+用户 0 固定方向与 BS 夹角 φ_kB = 44.69 度
+用户 1 固定方向与 BS 夹角 φ_kB = 45.15 度
+用户 2 固定方向与 BS 夹角 φ_kB = 45.85 度
+用户 3 固定方向与 BS 夹角 φ_kB = 44.04 度
+用户 4 固定方向与 BS 夹角 φ_kB = 52.04 度
+用户 5 固定方向与 BS 夹角 φ_kB = 48.03 度
+用户 6 固定方向与 BS 夹角 φ_kB = 44.55 度
+用户 7 固定方向与 BS 夹角 φ_kB = 44.83 度
+用户 8 固定方向与 BS 夹角 φ_kB = 51.26 度
+用户 9 固定方向与 BS 夹角 φ_kB = 45.00 度
+h参数 [1.58932030e-08 2.29774456e-08 7.77267274e-09 2.69121060e-08
+ 3.82574420e-09 1.12782928e-08 1.43966091e-08 9.84117883e-09
+ 4.56673213e-09 1.31301303e-08]
+RA orientations optimized.
+优化完成
+Selected clients in round 2: [1 2 4 6 7]
+
+ | Global Training Round : 2 |
+
+| Global Round : 2 | Client: 1 | Local Epoch : 0 | [0/510 (0%)]	Loss: 2.373705
+| Global Round : 2 | Client: 1 | Local Epoch : 1 | [0/510 (0%)]	Loss: 1.027141
+| Global Round : 2 | Client: 1 | Local Epoch : 2 | [0/510 (0%)]	Loss: 0.756192
+| Global Round : 2 | Client: 1 | Local Epoch : 3 | [0/510 (0%)]	Loss: 0.597529
+| Global Round : 2 | Client: 1 | Local Epoch : 4 | [0/510 (0%)]	Loss: 0.658317
+| Global Round : 2 | Client: 2 | Local Epoch : 0 | [0/827 (0%)]	Loss: 1.243378
+| Global Round : 2 | Client: 2 | Local Epoch : 0 | [640/827 (83%)]	Loss: 0.583246
+| Global Round : 2 | Client: 2 | Local Epoch : 1 | [0/827 (0%)]	Loss: 0.490830
+| Global Round : 2 | Client: 2 | Local Epoch : 1 | [640/827 (83%)]	Loss: 0.434250
+| Global Round : 2 | Client: 2 | Local Epoch : 2 | [0/827 (0%)]	Loss: 0.596178
+| Global Round : 2 | Client: 2 | Local Epoch : 2 | [640/827 (83%)]	Loss: 0.415720
+| Global Round : 2 | Client: 2 | Local Epoch : 3 | [0/827 (0%)]	Loss: 0.400153
+| Global Round : 2 | Client: 2 | Local Epoch : 3 | [640/827 (83%)]	Loss: 0.274293
+| Global Round : 2 | Client: 2 | Local Epoch : 4 | [0/827 (0%)]	Loss: 0.389883
+| Global Round : 2 | Client: 2 | Local Epoch : 4 | [640/827 (83%)]	Loss: 0.274527
+| Global Round : 2 | Client: 4 | Local Epoch : 0 | [0/514 (0%)]	Loss: 1.977853
+| Global Round : 2 | Client: 4 | Local Epoch : 1 | [0/514 (0%)]	Loss: 1.088493
+| Global Round : 2 | Client: 4 | Local Epoch : 2 | [0/514 (0%)]	Loss: 1.195703
+| Global Round : 2 | Client: 4 | Local Epoch : 3 | [0/514 (0%)]	Loss: 0.769580
+| Global Round : 2 | Client: 4 | Local Epoch : 4 | [0/514 (0%)]	Loss: 0.659296
+| Global Round : 2 | Client: 6 | Local Epoch : 0 | [0/777 (0%)]	Loss: 2.775041
+| Global Round : 2 | Client: 6 | Local Epoch : 0 | [640/777 (83%)]	Loss: 0.855516
+| Global Round : 2 | Client: 6 | Local Epoch : 1 | [0/777 (0%)]	Loss: 0.762329
+| Global Round : 2 | Client: 6 | Local Epoch : 1 | [640/777 (83%)]	Loss: 0.655540
+| Global Round : 2 | Client: 6 | Local Epoch : 2 | [0/777 (0%)]	Loss: 0.615261
+| Global Round : 2 | Client: 6 | Local Epoch : 2 | [640/777 (83%)]	Loss: 0.432128
+| Global Round : 2 | Client: 6 | Local Epoch : 3 | [0/777 (0%)]	Loss: 0.476945
+| Global Round : 2 | Client: 6 | Local Epoch : 3 | [640/777 (83%)]	Loss: 0.324353
+| Global Round : 2 | Client: 6 | Local Epoch : 4 | [0/777 (0%)]	Loss: 0.484042
+| Global Round : 2 | Client: 6 | Local Epoch : 4 | [640/777 (83%)]	Loss: 0.422100
+| Global Round : 2 | Client: 7 | Local Epoch : 0 | [0/590 (0%)]	Loss: 3.753891
+| Global Round : 2 | Client: 7 | Local Epoch : 1 | [0/590 (0%)]	Loss: 0.700632
+| Global Round : 2 | Client: 7 | Local Epoch : 2 | [0/590 (0%)]	Loss: 0.559873
+| Global Round : 2 | Client: 7 | Local Epoch : 3 | [0/590 (0%)]	Loss: 0.451192
+| Global Round : 2 | Client: 7 | Local Epoch : 4 | [0/590 (0%)]	Loss: 0.512345
+  3%|▎         | 3/100 [00:07<04:21,  2.70s/it]average loss:   0.7559362350144083
+average local test accuracy: 0.434765625
+global test accuracy:  0.265625
+3D positions plotted.
+用户 0 固定方向与 BS 夹角 φ_kB = 44.69 度
+用户 1 固定方向与 BS 夹角 φ_kB = 45.15 度
+用户 2 固定方向与 BS 夹角 φ_kB = 45.85 度
+用户 3 固定方向与 BS 夹角 φ_kB = 44.04 度
+用户 4 固定方向与 BS 夹角 φ_kB = 52.04 度
+用户 5 固定方向与 BS 夹角 φ_kB = 48.03 度
+用户 6 固定方向与 BS 夹角 φ_kB = 44.55 度
+用户 7 固定方向与 BS 夹角 φ_kB = 44.83 度
+用户 8 固定方向与 BS 夹角 φ_kB = 51.26 度
+用户 9 固定方向与 BS 夹角 φ_kB = 45.00 度
+h参数 [1.73506566e-08 1.84854698e-08 9.81314339e-09 2.52897540e-08
+ 3.32820485e-09 1.26207932e-08 1.55994508e-08 1.14194576e-08
+ 4.89036000e-09 1.53059111e-08]
+RA orientations optimized.
+优化完成
+Selected clients in round 3: [2 3 4 7 9]
+
+ | Global Training Round : 3 |
+
+| Global Round : 3 | Client: 2 | Local Epoch : 0 | [0/827 (0%)]	Loss: 1.316757
+| Global Round : 3 | Client: 2 | Local Epoch : 0 | [640/827 (83%)]	Loss: 0.508382
+| Global Round : 3 | Client: 2 | Local Epoch : 1 | [0/827 (0%)]	Loss: 0.491852
+| Global Round : 3 | Client: 2 | Local Epoch : 1 | [640/827 (83%)]	Loss: 0.394729
+| Global Round : 3 | Client: 2 | Local Epoch : 2 | [0/827 (0%)]	Loss: 0.283580
+| Global Round : 3 | Client: 2 | Local Epoch : 2 | [640/827 (83%)]	Loss: 0.300243
+| Global Round : 3 | Client: 2 | Local Epoch : 3 | [0/827 (0%)]	Loss: 0.197309
+| Global Round : 3 | Client: 2 | Local Epoch : 3 | [640/827 (83%)]	Loss: 0.271981
+| Global Round : 3 | Client: 2 | Local Epoch : 4 | [0/827 (0%)]	Loss: 0.337758
+| Global Round : 3 | Client: 2 | Local Epoch : 4 | [640/827 (83%)]	Loss: 0.394769
+| Global Round : 3 | Client: 3 | Local Epoch : 0 | [0/926 (0%)]	Loss: 5.552665
+| Global Round : 3 | Client: 3 | Local Epoch : 0 | [640/926 (71%)]	Loss: 0.750126
+| Global Round : 3 | Client: 3 | Local Epoch : 1 | [0/926 (0%)]	Loss: 0.679540
+| Global Round : 3 | Client: 3 | Local Epoch : 1 | [640/926 (71%)]	Loss: 0.480767
+| Global Round : 3 | Client: 3 | Local Epoch : 2 | [0/926 (0%)]	Loss: 0.278816
+| Global Round : 3 | Client: 3 | Local Epoch : 2 | [640/926 (71%)]	Loss: 0.274040
+| Global Round : 3 | Client: 3 | Local Epoch : 3 | [0/926 (0%)]	Loss: 0.240312
+| Global Round : 3 | Client: 3 | Local Epoch : 3 | [640/926 (71%)]	Loss: 0.253812
+| Global Round : 3 | Client: 3 | Local Epoch : 4 | [0/926 (0%)]	Loss: 0.213492
+| Global Round : 3 | Client: 3 | Local Epoch : 4 | [640/926 (71%)]	Loss: 0.376475
+| Global Round : 3 | Client: 4 | Local Epoch : 0 | [0/514 (0%)]	Loss: 2.296459
+| Global Round : 3 | Client: 4 | Local Epoch : 1 | [0/514 (0%)]	Loss: 0.969725
+| Global Round : 3 | Client: 4 | Local Epoch : 2 | [0/514 (0%)]	Loss: 0.792655
+| Global Round : 3 | Client: 4 | Local Epoch : 3 | [0/514 (0%)]	Loss: 0.800260
+| Global Round : 3 | Client: 4 | Local Epoch : 4 | [0/514 (0%)]	Loss: 0.405347
+| Global Round : 3 | Client: 7 | Local Epoch : 0 | [0/590 (0%)]	Loss: 1.065346
+| Global Round : 3 | Client: 7 | Local Epoch : 1 | [0/590 (0%)]	Loss: 0.331038
+| Global Round : 3 | Client: 7 | Local Epoch : 2 | [0/590 (0%)]	Loss: 0.402872
+| Global Round : 3 | Client: 7 | Local Epoch : 3 | [0/590 (0%)]	Loss: 0.138633
+| Global Round : 3 | Client: 7 | Local Epoch : 4 | [0/590 (0%)]	Loss: 0.342396
+| Global Round : 3 | Client: 9 | Local Epoch : 0 | [0/305 (0%)]	Loss: 1.535225
+| Global Round : 3 | Client: 9 | Local Epoch : 1 | [0/305 (0%)]	Loss: 0.310051
+| Global Round : 3 | Client: 9 | Local Epoch : 2 | [0/305 (0%)]	Loss: 0.293876
+| Global Round : 3 | Client: 9 | Local Epoch : 3 | [0/305 (0%)]	Loss: 0.588212
+| Global Round : 3 | Client: 9 | Local Epoch : 4 | [0/305 (0%)]	Loss: 0.376884
+  4%|▍         | 4/100 [00:10<04:26,  2.77s/it]average loss:   0.5846360984941323
+average local test accuracy: 0.4489583333333334
+global test accuracy:  0.40885416666666663
+3D positions plotted.
+用户 0 固定方向与 BS 夹角 φ_kB = 44.69 度
+用户 1 固定方向与 BS 夹角 φ_kB = 45.15 度
+用户 2 固定方向与 BS 夹角 φ_kB = 45.85 度
+用户 3 固定方向与 BS 夹角 φ_kB = 44.04 度
+用户 4 固定方向与 BS 夹角 φ_kB = 52.04 度
+用户 5 固定方向与 BS 夹角 φ_kB = 48.03 度
+用户 6 固定方向与 BS 夹角 φ_kB = 44.55 度
+用户 7 固定方向与 BS 夹角 φ_kB = 44.83 度
+用户 8 固定方向与 BS 夹角 φ_kB = 51.26 度
+用户 9 固定方向与 BS 夹角 φ_kB = 45.00 度
+h参数 [1.32842345e-08 2.36079622e-08 5.42818677e-09 2.87970188e-08
+ 3.91017346e-09 8.72234875e-09 1.49479254e-08 1.65302833e-08
+ 4.54077674e-09 1.09683254e-08]
+RA orientations optimized.
+优化完成
+Selected clients in round 4: [1 2 4 5 6]
+
+ | Global Training Round : 4 |
+
+| Global Round : 4 | Client: 1 | Local Epoch : 0 | [0/510 (0%)]	Loss: 2.184731
+| Global Round : 4 | Client: 1 | Local Epoch : 1 | [0/510 (0%)]	Loss: 0.707057
+| Global Round : 4 | Client: 1 | Local Epoch : 2 | [0/510 (0%)]	Loss: 0.625697
+| Global Round : 4 | Client: 1 | Local Epoch : 3 | [0/510 (0%)]	Loss: 0.686965
+| Global Round : 4 | Client: 1 | Local Epoch : 4 | [0/510 (0%)]	Loss: 0.605691
+| Global Round : 4 | Client: 2 | Local Epoch : 0 | [0/827 (0%)]	Loss: 1.682568
+| Global Round : 4 | Client: 2 | Local Epoch : 0 | [640/827 (83%)]	Loss: 0.566575
+| Global Round : 4 | Client: 2 | Local Epoch : 1 | [0/827 (0%)]	Loss: 0.457863
+| Global Round : 4 | Client: 2 | Local Epoch : 1 | [640/827 (83%)]	Loss: 0.329788
+| Global Round : 4 | Client: 2 | Local Epoch : 2 | [0/827 (0%)]	Loss: 0.360752
+| Global Round : 4 | Client: 2 | Local Epoch : 2 | [640/827 (83%)]	Loss: 0.242650
+| Global Round : 4 | Client: 2 | Local Epoch : 3 | [0/827 (0%)]	Loss: 0.316143
+| Global Round : 4 | Client: 2 | Local Epoch : 3 | [640/827 (83%)]	Loss: 0.495826
+| Global Round : 4 | Client: 2 | Local Epoch : 4 | [0/827 (0%)]	Loss: 0.239301
+| Global Round : 4 | Client: 2 | Local Epoch : 4 | [640/827 (83%)]	Loss: 0.379580
+| Global Round : 4 | Client: 4 | Local Epoch : 0 | [0/514 (0%)]	Loss: 2.155578
+| Global Round : 4 | Client: 4 | Local Epoch : 1 | [0/514 (0%)]	Loss: 0.818468
+| Global Round : 4 | Client: 4 | Local Epoch : 2 | [0/514 (0%)]	Loss: 0.844341
+| Global Round : 4 | Client: 4 | Local Epoch : 3 | [0/514 (0%)]	Loss: 0.564108
+| Global Round : 4 | Client: 4 | Local Epoch : 4 | [0/514 (0%)]	Loss: 0.508932
+| Global Round : 4 | Client: 5 | Local Epoch : 0 | [0/641 (0%)]	Loss: 3.784403
+| Global Round : 4 | Client: 5 | Local Epoch : 1 | [0/641 (0%)]	Loss: 0.769863
+| Global Round : 4 | Client: 5 | Local Epoch : 2 | [0/641 (0%)]	Loss: 0.339411
+| Global Round : 4 | Client: 5 | Local Epoch : 3 | [0/641 (0%)]	Loss: 0.230027
+| Global Round : 4 | Client: 5 | Local Epoch : 4 | [0/641 (0%)]	Loss: 0.324112
+| Global Round : 4 | Client: 6 | Local Epoch : 0 | [0/777 (0%)]	Loss: 3.382384
+| Global Round : 4 | Client: 6 | Local Epoch : 0 | [640/777 (83%)]	Loss: 0.603210
+| Global Round : 4 | Client: 6 | Local Epoch : 1 | [0/777 (0%)]	Loss: 0.562980
+| Global Round : 4 | Client: 6 | Local Epoch : 1 | [640/777 (83%)]	Loss: 0.678744
+| Global Round : 4 | Client: 6 | Local Epoch : 2 | [0/777 (0%)]	Loss: 0.435568
+| Global Round : 4 | Client: 6 | Local Epoch : 2 | [640/777 (83%)]	Loss: 0.401066
+| Global Round : 4 | Client: 6 | Local Epoch : 3 | [0/777 (0%)]	Loss: 0.351986
+| Global Round : 4 | Client: 6 | Local Epoch : 3 | [640/777 (83%)]	Loss: 0.444977
+| Global Round : 4 | Client: 6 | Local Epoch : 4 | [0/777 (0%)]	Loss: 0.359175
+| Global Round : 4 | Client: 6 | Local Epoch : 4 | [640/777 (83%)]	Loss: 0.332335
+  5%|▌         | 5/100 [00:13<04:32,  2.87s/it]average loss:   0.630928359182108
+average local test accuracy: 0.44453125
+global test accuracy:  0.296875
+3D positions plotted.
+用户 0 固定方向与 BS 夹角 φ_kB = 44.69 度
+用户 1 固定方向与 BS 夹角 φ_kB = 45.15 度
+用户 2 固定方向与 BS 夹角 φ_kB = 45.85 度
+用户 3 固定方向与 BS 夹角 φ_kB = 44.04 度
+用户 4 固定方向与 BS 夹角 φ_kB = 52.04 度
+用户 5 固定方向与 BS 夹角 φ_kB = 48.03 度
+用户 6 固定方向与 BS 夹角 φ_kB = 44.55 度
+用户 7 固定方向与 BS 夹角 φ_kB = 44.83 度
+用户 8 固定方向与 BS 夹角 φ_kB = 51.26 度
+用户 9 固定方向与 BS 夹角 φ_kB = 45.00 度
+h参数 [1.88699085e-08 1.55410888e-08 1.72530157e-08 1.59674704e-08
+ 3.54823181e-09 5.83936508e-09 2.03560223e-08 1.65968167e-08
+ 5.04683936e-09 1.80994888e-08]
+RA orientations optimized.
+优化完成
+Selected clients in round 5: [1 3 4 5]
+
+ | Global Training Round : 5 |
+
+| Global Round : 5 | Client: 1 | Local Epoch : 0 | [0/510 (0%)]	Loss: 1.842009
+| Global Round : 5 | Client: 1 | Local Epoch : 1 | [0/510 (0%)]	Loss: 0.378486
+| Global Round : 5 | Client: 1 | Local Epoch : 2 | [0/510 (0%)]	Loss: 0.592233
+| Global Round : 5 | Client: 1 | Local Epoch : 3 | [0/510 (0%)]	Loss: 0.768496
+| Global Round : 5 | Client: 1 | Local Epoch : 4 | [0/510 (0%)]	Loss: 0.522536
+| Global Round : 5 | Client: 3 | Local Epoch : 0 | [0/926 (0%)]	Loss: 5.869245
+| Global Round : 5 | Client: 3 | Local Epoch : 0 | [640/926 (71%)]	Loss: 0.883680
+| Global Round : 5 | Client: 3 | Local Epoch : 1 | [0/926 (0%)]	Loss: 0.602692
+| Global Round : 5 | Client: 3 | Local Epoch : 1 | [640/926 (71%)]	Loss: 0.249195
+| Global Round : 5 | Client: 3 | Local Epoch : 2 | [0/926 (0%)]	Loss: 0.326972
+| Global Round : 5 | Client: 3 | Local Epoch : 2 | [640/926 (71%)]	Loss: 0.413564
+| Global Round : 5 | Client: 3 | Local Epoch : 3 | [0/926 (0%)]	Loss: 0.183793
+| Global Round : 5 | Client: 3 | Local Epoch : 3 | [640/926 (71%)]	Loss: 0.295016
+| Global Round : 5 | Client: 3 | Local Epoch : 4 | [0/926 (0%)]	Loss: 0.158567
+| Global Round : 5 | Client: 3 | Local Epoch : 4 | [640/926 (71%)]	Loss: 0.260831
+| Global Round : 5 | Client: 4 | Local Epoch : 0 | [0/514 (0%)]	Loss: 1.358508
+| Global Round : 5 | Client: 4 | Local Epoch : 1 | [0/514 (0%)]	Loss: 0.743937
+| Global Round : 5 | Client: 4 | Local Epoch : 2 | [0/514 (0%)]	Loss: 0.616037
+| Global Round : 5 | Client: 4 | Local Epoch : 3 | [0/514 (0%)]	Loss: 0.688492
+| Global Round : 5 | Client: 4 | Local Epoch : 4 | [0/514 (0%)]	Loss: 0.509270
+| Global Round : 5 | Client: 5 | Local Epoch : 0 | [0/641 (0%)]	Loss: 3.877320
+| Global Round : 5 | Client: 5 | Local Epoch : 1 | [0/641 (0%)]	Loss: 0.649855
+| Global Round : 5 | Client: 5 | Local Epoch : 2 | [0/641 (0%)]	Loss: 0.610263
+| Global Round : 5 | Client: 5 | Local Epoch : 3 | [0/641 (0%)]	Loss: 0.521575
+| Global Round : 5 | Client: 5 | Local Epoch : 4 | [0/641 (0%)]	Loss: 0.125780
+  6%|▌         | 6/100 [00:16<04:18,  2.75s/it]average loss:   0.6546722906668272
+average local test accuracy: 0.36106770833333335
+global test accuracy:  0.3841145833333333
+3D positions plotted.
+用户 0 固定方向与 BS 夹角 φ_kB = 44.69 度
+用户 1 固定方向与 BS 夹角 φ_kB = 45.15 度
+用户 2 固定方向与 BS 夹角 φ_kB = 45.85 度
+用户 3 固定方向与 BS 夹角 φ_kB = 44.04 度
+用户 4 固定方向与 BS 夹角 φ_kB = 52.04 度
+用户 5 固定方向与 BS 夹角 φ_kB = 48.03 度
+用户 6 固定方向与 BS 夹角 φ_kB = 44.55 度
+用户 7 固定方向与 BS 夹角 φ_kB = 44.83 度
+用户 8 固定方向与 BS 夹角 φ_kB = 51.26 度
+用户 9 固定方向与 BS 夹角 φ_kB = 45.00 度
+h参数 [1.35956234e-08 9.70748306e-09 1.45079426e-08 1.30305379e-08
+ 3.83485215e-09 9.85428644e-09 1.47633106e-08 1.96830201e-08
+ 4.34537477e-09 1.30347279e-08]
+RA orientations optimized.
+优化完成
+Selected clients in round 6: [0 1 4 5]
+
+ | Global Training Round : 6 |
+
+| Global Round : 6 | Client: 0 | Local Epoch : 0 | [0/294 (0%)]	Loss: 3.009588
+| Global Round : 6 | Client: 0 | Local Epoch : 1 | [0/294 (0%)]	Loss: 1.397181
+| Global Round : 6 | Client: 0 | Local Epoch : 2 | [0/294 (0%)]	Loss: 0.904605
+| Global Round : 6 | Client: 0 | Local Epoch : 3 | [0/294 (0%)]	Loss: 0.695021
+| Global Round : 6 | Client: 0 | Local Epoch : 4 | [0/294 (0%)]	Loss: 0.693195
+| Global Round : 6 | Client: 1 | Local Epoch : 0 | [0/510 (0%)]	Loss: 1.627683
+| Global Round : 6 | Client: 1 | Local Epoch : 1 | [0/510 (0%)]	Loss: 0.800694
+| Global Round : 6 | Client: 1 | Local Epoch : 2 | [0/510 (0%)]	Loss: 0.439308
+| Global Round : 6 | Client: 1 | Local Epoch : 3 | [0/510 (0%)]	Loss: 0.591244
+| Global Round : 6 | Client: 1 | Local Epoch : 4 | [0/510 (0%)]	Loss: 0.363641
+| Global Round : 6 | Client: 4 | Local Epoch : 0 | [0/514 (0%)]	Loss: 1.781706
+| Global Round : 6 | Client: 4 | Local Epoch : 1 | [0/514 (0%)]	Loss: 0.726078
+| Global Round : 6 | Client: 4 | Local Epoch : 2 | [0/514 (0%)]	Loss: 0.389080
+| Global Round : 6 | Client: 4 | Local Epoch : 3 | [0/514 (0%)]	Loss: 0.548091
+| Global Round : 6 | Client: 4 | Local Epoch : 4 | [0/514 (0%)]	Loss: 0.494474
+| Global Round : 6 | Client: 5 | Local Epoch : 0 | [0/641 (0%)]	Loss: 1.438231
+| Global Round : 6 | Client: 5 | Local Epoch : 1 | [0/641 (0%)]	Loss: 0.137163
+| Global Round : 6 | Client: 5 | Local Epoch : 2 | [0/641 (0%)]	Loss: 0.331003
+| Global Round : 6 | Client: 5 | Local Epoch : 3 | [0/641 (0%)]	Loss: 0.218338
+| Global Round : 6 | Client: 5 | Local Epoch : 4 | [0/641 (0%)]	Loss: 0.130270
+  7%|▋         | 7/100 [00:18<03:53,  2.52s/it]average loss:   0.6574977190739343
+average local test accuracy: 0.3515625
+global test accuracy:  0.5299479166666666
+3D positions plotted.
+用户 0 固定方向与 BS 夹角 φ_kB = 44.69 度
+用户 1 固定方向与 BS 夹角 φ_kB = 45.15 度
+用户 2 固定方向与 BS 夹角 φ_kB = 45.85 度
+用户 3 固定方向与 BS 夹角 φ_kB = 44.04 度
+用户 4 固定方向与 BS 夹角 φ_kB = 52.04 度
+用户 5 固定方向与 BS 夹角 φ_kB = 48.03 度
+用户 6 固定方向与 BS 夹角 φ_kB = 44.55 度
+用户 7 固定方向与 BS 夹角 φ_kB = 44.83 度
+用户 8 固定方向与 BS 夹角 φ_kB = 51.26 度
+用户 9 固定方向与 BS 夹角 φ_kB = 45.00 度
+h参数 [8.75983055e-09 1.48595809e-08 1.44805227e-08 1.20316382e-08
+ 3.23877215e-09 6.56877312e-09 1.37535707e-08 2.06975357e-08
+ 4.09430710e-09 2.13064427e-08]
+RA orientations optimized.
+优化完成
+Selected clients in round 7: [0 4 5 6]
+
+ | Global Training Round : 7 |
+
+| Global Round : 7 | Client: 0 | Local Epoch : 0 | [0/294 (0%)]	Loss: 1.214279
+| Global Round : 7 | Client: 0 | Local Epoch : 1 | [0/294 (0%)]	Loss: 0.541670
+| Global Round : 7 | Client: 0 | Local Epoch : 2 | [0/294 (0%)]	Loss: 0.504787
+| Global Round : 7 | Client: 0 | Local Epoch : 3 | [0/294 (0%)]	Loss: 0.461480
+| Global Round : 7 | Client: 0 | Local Epoch : 4 | [0/294 (0%)]	Loss: 0.497664
+| Global Round : 7 | Client: 4 | Local Epoch : 0 | [0/514 (0%)]	Loss: 1.055866
+| Global Round : 7 | Client: 4 | Local Epoch : 1 | [0/514 (0%)]	Loss: 0.344646
+| Global Round : 7 | Client: 4 | Local Epoch : 2 | [0/514 (0%)]	Loss: 0.476184
+| Global Round : 7 | Client: 4 | Local Epoch : 3 | [0/514 (0%)]	Loss: 0.436260
+| Global Round : 7 | Client: 4 | Local Epoch : 4 | [0/514 (0%)]	Loss: 0.461063
+| Global Round : 7 | Client: 5 | Local Epoch : 0 | [0/641 (0%)]	Loss: 2.663650
+| Global Round : 7 | Client: 5 | Local Epoch : 1 | [0/641 (0%)]	Loss: 0.327955
+| Global Round : 7 | Client: 5 | Local Epoch : 2 | [0/641 (0%)]	Loss: 0.071374
+| Global Round : 7 | Client: 5 | Local Epoch : 3 | [0/641 (0%)]	Loss: 0.077034
+| Global Round : 7 | Client: 5 | Local Epoch : 4 | [0/641 (0%)]	Loss: 0.396821
+| Global Round : 7 | Client: 6 | Local Epoch : 0 | [0/777 (0%)]	Loss: 2.027021
+| Global Round : 7 | Client: 6 | Local Epoch : 0 | [640/777 (83%)]	Loss: 0.400867
+| Global Round : 7 | Client: 6 | Local Epoch : 1 | [0/777 (0%)]	Loss: 0.538613
+| Global Round : 7 | Client: 6 | Local Epoch : 1 | [640/777 (83%)]	Loss: 0.560781
+| Global Round : 7 | Client: 6 | Local Epoch : 2 | [0/777 (0%)]	Loss: 0.474884
+| Global Round : 7 | Client: 6 | Local Epoch : 2 | [640/777 (83%)]	Loss: 0.412950
+| Global Round : 7 | Client: 6 | Local Epoch : 3 | [0/777 (0%)]	Loss: 0.357857
+| Global Round : 7 | Client: 6 | Local Epoch : 3 | [640/777 (83%)]	Loss: 0.272160
+| Global Round : 7 | Client: 6 | Local Epoch : 4 | [0/777 (0%)]	Loss: 0.318112
+| Global Round : 7 | Client: 6 | Local Epoch : 4 | [640/777 (83%)]	Loss: 0.179412
+  8%|▊         | 8/100 [00:20<03:43,  2.43s/it]

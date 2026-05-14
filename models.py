@@ -68,3 +68,23 @@ class ShuffLeNet(nn.Module):
         z = self.feature_extractor(x)
         p = self.classifier(z)
         return z,p
+    
+class DNN(nn.Module):
+    def __init__(self, args,code_length=64,num_classes = 10):
+        super(DNN, self).__init__()
+        self.code_length = code_length
+        self.num_classes = num_classes  
+        self.feature_extractor = nn.Sequential(
+            nn.Flatten(),
+            nn.Linear(28*28*1, 512),
+            nn.ReLU(),
+            nn.Linear(512, 256),
+            nn.ReLU(),
+            nn.Linear(256, self.code_length)
+        )
+        self.classifier =  nn.Sequential(
+                                nn.Linear(self.code_length, self.num_classes))
+    def forward(self,x):
+        z = self.feature_extractor(x)
+        p = self.classifier(z)
+        return z,p
